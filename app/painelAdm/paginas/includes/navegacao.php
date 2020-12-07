@@ -31,8 +31,8 @@
     <!-- mantem tudo no lugar -->
     <ul class="navbar-nav ml-auto">
 
-       
-<!-- icones da navbar topo -->
+
+      <!-- icones da navbar topo -->
 
       </li>
       <li class="nav-item">
@@ -79,44 +79,44 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item">
+          <li class="nav-item    <?php echo (($_GET['pg'] == 'agenda') ? 'bg-primary' : ''); ?>">
             <a href="?pg=agenda" class="nav-link">
               <i class="far icon-contacts nav-icon"></i>
               <p>Agenda</p>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item   <?php echo (($_GET['pg'] == 'pacientes') ? 'bg-primary' : ''); ?> ">
             <a href="?pg=pacientes" class="nav-link">
               <i class="far icon-person_add_alt_1 nav-icon"></i>
               <p>Pacientes</p>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item   <?php echo (($_GET['pg'] == 'profissionais') ? 'bg-primary' : ''); ?>  ">
             <a href="?pg=profissionais" class="nav-link">
               <i class="far icon-groups nav-icon"></i>
               <p>Profissionais</p>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item  <?php echo (($_GET['pg'] == 'marcarconsulta') ? 'bg-primary' : ''); ?>  ">
             <a href="?pg=marcarconsulta" class="nav-link">
               <i class="far icon-profile nav-icon"></i>
               <p>Marca Consulta</p>
             </a>
           </li>
-          
-          <li class="nav-item">
+
+          <li class="nav-item  <?php echo (($_GET['pg'] == 'cadastrodemedicos') ? 'bg-primary' : ''); ?>  ">
             <a href="?pg=cadastrodemedicos" class="nav-link">
               <i class="far icon-user nav-icon"></i>
               <p>Cadastro de Medicos</p>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item  <?php echo (($_GET['pg'] == 'cadastrodeespecialidades') ? 'bg-primary' : ''); ?>  ">
             <a href="?pg=cadastrodeespecialidades" class="nav-link">
               <i class="far icon-user nav-icon"></i>
               <p>Cadastra especialidades</p>
             </a>
           </li>
-          
+
 
 
 

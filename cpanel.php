@@ -18,6 +18,12 @@ if ($cpanel) {
     switch ($_GET["pg"]) {
 
 
+       
+
+        case 'login':
+            include_once "app/site/login.php";
+            break;
+
         case 'agenda':
             include_once "app/painelAdm/paginas/includes/header.php";
             include_once "app/painelAdm/paginas/includes/navegacao.php";
@@ -36,6 +42,7 @@ if ($cpanel) {
 
 
             break;
+
         case 'profissionais':
             include_once "app/painelAdm/paginas/includes/header.php";
             include_once "app/painelAdm/paginas/includes/navegacao.php";

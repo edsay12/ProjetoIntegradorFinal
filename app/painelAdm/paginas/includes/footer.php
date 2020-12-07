@@ -42,6 +42,12 @@
 <!-- overlayScrollbars -->
 <script src="app/paineladm/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 
+
+<!-- mascara de formularios -->
+<script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>        
+
+
+
 <!-- DataTables  & Plugins -->
 <script src="app/paineladm/plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="app/paineladm/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -55,7 +61,7 @@
 <script src="app/paineladm/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
 <script src="app/paineladm/plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="app/paineladm/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-
+<script src="app/painelAdm/dist/js/mascara.js"></script>
 <!-- AdminLTE App -->
 <script src="app/paineladm/dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->

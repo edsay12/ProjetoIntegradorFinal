@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdmLuiz</title>
+  <title>//divlopers</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -21,11 +21,17 @@
   <link rel="stylesheet" href="app/paineladm/plugins/jqvmap/jqvmap.min.css">
   <link rel="stylesheet" href="app\assets\icon\icon.css">
 
+
   <!-- tabela de dados -->
   <link rel="stylesheet" href="app/paineladm/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="app/paineladm/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   <link rel="stylesheet" href="app/paineladm/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
- 
+  <!-- tabela de dados -->
+
+
+
+
+
   <!-- Theme style -->
   <link rel="stylesheet" href="app/paineladm/dist/css/adminlte.min.css">
   <!-- overlayScrollbars -->
