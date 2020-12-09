@@ -85,6 +85,12 @@
               <p>Agenda</p>
             </a>
           </li>
+          <li class="nav-item  <?php echo (($_GET['pg'] == 'marcarconsulta') ? 'bg-primary' : ''); ?>  ">
+            <a href="?pg=marcarconsulta" class="nav-link">
+              <i class="far icon-profile nav-icon"></i>
+              <p>Marca Consulta</p>
+            </a>
+          </li>
           <li class="nav-item   <?php echo (($_GET['pg'] == 'pacientes') ? 'bg-primary' : ''); ?> ">
             <a href="?pg=pacientes" class="nav-link">
               <i class="far icon-person_add_alt_1 nav-icon"></i>
@@ -97,23 +103,23 @@
               <p>Profissionais</p>
             </a>
           </li>
-          <li class="nav-item  <?php echo (($_GET['pg'] == 'marcarconsulta') ? 'bg-primary' : ''); ?>  ">
-            <a href="?pg=marcarconsulta" class="nav-link">
-              <i class="far icon-profile nav-icon"></i>
-              <p>Marca Consulta</p>
-            </a>
-          </li>
 
           <li class="nav-item  <?php echo (($_GET['pg'] == 'cadastrodemedicos') ? 'bg-primary' : ''); ?>  ">
             <a href="?pg=cadastrodemedicos" class="nav-link">
               <i class="far icon-user nav-icon"></i>
-              <p>Cadastro de Medicos</p>
+              <p>Cadastro de Médicos</p>
             </a>
           </li>
           <li class="nav-item  <?php echo (($_GET['pg'] == 'cadastrodeespecialidades') ? 'bg-primary' : ''); ?>  ">
             <a href="?pg=cadastrodeespecialidades" class="nav-link">
               <i class="far icon-user nav-icon"></i>
-              <p>Cadastra especialidades</p>
+              <p>Cadastro de especialidades</p>
+            </a>
+          </li>
+          <li class="nav-item  <?php echo (($_GET['pg'] == 'planodesaude') ? 'bg-primary' : ''); ?>  ">
+            <a href="?pg=planodesaude" class="nav-link">
+              <i class="far icon-user nav-icon"></i>
+              <p>Planos de Saude</p>
             </a>
           </li>
 

@@ -45,10 +45,10 @@
                                         <th>Paciente</th>
                                         <th>RG</th>
                                         <th>CPF</th>
-                                        <th>Recepicionista</th>
+                                        <th>Recepcionista</th>
                                         <th>Prontuário</th>
                                         <th>Marcar Nova Consulta</th>
-                                        <th>Açoes</th>
+                                        <th>Ações</th>
                                     </tr>
                                 </thead>
                                 <tbody>

@@ -14,7 +14,7 @@
                 <div class="col-3 mt-4"> <img src="app/painelAdm/dist/img/medd.png" alt=""> </div>
                 <div class="col-6  mb-3">
                     <!-- formulario -->
-                    <form action="" method="POST">
+                    <form action="?pg=cadastrodemedicos" method="POST">
                         <div class="form-group">
                             <label for="inputAddress">Nome Completo do Paciente </label>
                             <input class="form-control" type="text" name="field-name" placeholder="joaquin lopes ....">
@@ -32,7 +32,7 @@
                         </div>
                         <div class="row">
                             <div class="form-group   col-md-6">
-                                <label for="inputState">Medicos</label>
+                                <label for="inputState">Médicos</label>
 
                                 <select id="inputState" class="form-control">
                                     <option selected>Escolha</option>
@@ -56,7 +56,7 @@
                         </div>
 
                         <div class="text-center">
-                            <button type="submit" class="btn btn-info btn-lg btn-block"> Enviar<span class="icon-cheveron-right"></span> </button>
+                            <button type="submit" class="btn btn-info btn-lg btn-block"> Marcar<span class="icon-cheveron-right"></span> </button>
                         </div>
                     </form>
                 </div>

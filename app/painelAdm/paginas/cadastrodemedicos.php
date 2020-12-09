@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Cadastro De Medicos</h1>
+                    <h1 class="m-0">Cadastro De Médicos</h1>
                 </div>
             </div>
 
@@ -16,7 +16,7 @@
                     <form action="" method="POST">
                         <div class="form-group">
                             <label for="inputAddress">Nome Completo </label>
-                            <input class="form-control" type="text" name="field-name" placeholder="Nome Do Medico Aqui">
+                            <input class="form-control" type="text" name="field-name" placeholder="Nome do médico">
                         </div>
                         <div class="row">
                             <div class="form-group  col-md-6">
@@ -43,7 +43,7 @@
 
 
                         <div class="text-center">
-                            <button type="submit" class="btn btn-info btn-lg btn-block"> Enviar<span class="icon-cheveron-right"></span> </button>
+                            <button type="submit" class="btn btn-info btn-lg btn-block"> Cadastrar<span class="icon-cheveron-right"></span> </button>
                         </div>
                     </form>
                 </div>

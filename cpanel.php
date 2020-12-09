@@ -37,7 +37,7 @@ if ($cpanel) {
             include_once "app/painelAdm/paginas/includes/header.php";
             include_once "app/painelAdm/paginas/includes/navegacao.php";
             include_once "app/painelAdm/paginas/cadastrodemedicos.php";
-
+            inserirprofi();
             include_once "app/painelAdm/paginas/includes/footer.php";
 
 
@@ -75,6 +75,16 @@ if ($cpanel) {
             include_once "app/painelAdm/paginas/includes/header.php";
             include_once "app/painelAdm/paginas/includes/navegacao.php";
             include_once "app/painelAdm/paginas/cadastrodeespecialidades.php";
+
+            include_once "app/painelAdm/paginas/includes/footer.php";
+
+
+            break;
+
+        case 'planodesaude':
+            include_once "app/painelAdm/paginas/includes/header.php";
+            include_once "app/painelAdm/paginas/includes/navegacao.php";
+            include_once "app/painelAdm/paginas/planodesaude.php";
 
             include_once "app/painelAdm/paginas/includes/footer.php";
 

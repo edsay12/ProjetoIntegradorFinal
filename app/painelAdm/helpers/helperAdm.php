@@ -38,12 +38,13 @@ function verificaSeLogado()
 }
 
 
-function inserirUsuario()
+function inserirprofi()
 {
 
     //Pegando as variáveis via post
     $nome = trim($_POST['nome']);
-    $senha = trim($_POST['senha']);
+    $rg = trim($_POST['rg']);
+    $cpf = trim($_POST['cpf']);
 
     //movendo imagens para a pasta app/painelAdm/assets/img
     move_uploaded_file($_FILES['img_usuario']['tmp_name'], 'app/painelAdm/assets/img/' . $_FILES['img_usuario']['name']);
@@ -51,16 +52,16 @@ function inserirUsuario()
     //Validar as variáveis e encriptar a senha
     $parametros = array(
         ':nome' => $nome,
-        ':senha' => password_hash($senha, PASSWORD_DEFAULT),
-        ':img_usuario' => ($_FILES['img_usuario']['name'] == true) ? 'app/painelAdm/assets/img/' . $_FILES['img_usuario']['name']
-            : 'app/cpanel/assets/img/anonimo.png'
+        ':rg' => $rg,
+        ':cpf' => $cpf,
+        
     );
 
     $resultDados = new Conexao();
-    $resultDados->intervencaoNoBanco('INSERT INTO usuarios(nome, senha, img) VALUES (:nome,:senha, :img_usuario)', $parametros);
+    $resultDados->intervencaoNoBanco('INSERT INTO usuarios(nome, rg, cpf) VALUES (:nome, :rg, :cpf)', $parametros);
 
     //incluir a pagina que será exibida após cadastrar um usuario aqui:
-    include_once "app/painelAdm/paginas/usuarios-listar.php";
+    include_once "app/painelAdm/paginas/marcarconsulta.php";
 }
 
 function inserirProduto()

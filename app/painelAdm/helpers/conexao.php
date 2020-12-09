@@ -3,7 +3,7 @@ class Conexao
 {
     //Dados do banco
     private $db_server = 'localhost';
-    private $db_name = 'projetoFinal';
+    private $db_name = 'ProjetoIntegradorFinal';
     private $db_charset = 'utf8';
     private $db_username = 'root';
     private $db_password = '';

@@ -14,7 +14,7 @@
                     <form action="">
                         <div class="form-group text-center col-md-12">
 
-                            <input class="form-control" type="text" autofocus placeholder="Escreva A  Especialidade!">
+                            <input class="form-control" type="text" autofocus placeholder="Digite a Especialidade!">
 
                         </div>
                         <div class="class text-center">
