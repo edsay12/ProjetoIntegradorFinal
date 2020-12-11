@@ -1,3 +1,31 @@
 body {
-    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+    background-image: linear-gradient(to top, #2e1199 0%, #000000 100%);
 }
+
+@font-face{
+    font-family: "font";
+    src: url(../fonts/SteppedDemoRegular.ttf);
+}
+
+@font-face{
+    font-family: "fonte";
+    src: url(../fonts/Bellerose.ttf);
+}
+
+p{
+    font-family: "fonte";
+}
+
+h4{
+    font-family: "font";
+}
+
+h1{
+    font-family: "fonte";
+}
+
+#banner{
+    height: 300px;
+    width: 100%;
+}
+

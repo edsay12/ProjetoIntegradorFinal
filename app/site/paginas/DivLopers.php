@@ -17,16 +17,18 @@
 
     <!-- icoomon -->
 
-    <link rel="stylesheet" href="../../assets/icon/icon.css">
+    <link rel="shortcut icon" href="../../assets/icon/icon2.jfif">
 
     <title>Divlopers</title>
 </head>
 
 <body>
-    <img class="w-100" src="../../assets/img/banner/Banner.jfif" alt="">
+    <div class="container/fluid"> <img class="img-fluid" id="banner" src="../../assets/img/bannerLogo-0.png"  alt="">
     <br><br>
     <br>
     <br>
+    </div>
+     
 
 
     <div class="container" style="text-align: center">
@@ -41,17 +43,17 @@
 
             <div class="col-8">
 
-                <h4 class="text-center " style="font-size:30px">Adryan Amorim</h4>
-
-                <p style="font-size: 15px;">
+                <h4 class="text-center " style="font-size:30px; color: whitesmoke">Adryan Amorim</h4>
+<br><br>
+                <p style="font-size: 20px; color: white">
                     "Projeto muito bom, uma ótima oportunidade de reconhecimento."
                 </p>
-                <p style="font-size: 15px;">
+                <p style="font-size: 20px; color: white">
                     "Curso bastante interessante."
                 </p>
 
                 <div class="text-right">
-                    <a target="blank" href="http://adryanblack.movimentoweb.com.br/" class="btn btn-primary">Saber mais</a>
+                    <a target="blank" href="http://adryanblack.movimentoweb.com.br/" class="btn btn-outline-light">Saber mais</a>
                 </div>
 
             </div>
@@ -66,18 +68,18 @@
 
             <div class="col-8">
 
-                <h4 class="text-center " style="font-size:30px">Andrew Amorim</h4>
-
-                <p style="font-size: 15px;">
+                <h4 class="text-center " style="font-size:30px; color: white">Andrew Amorim</h4>
+<br><br>
+                <p style="font-size: 20px; color: white">
                     "Sobre o projeto, achei algo produtivo e interessante para o mercado de
                     trabalho, com algumas adversidades mas nada que um trabalho em equipe não ajude."
                 </p>
-                <p style="font-size: 15px;">
+                <p style="font-size: 20px; color: white">
                     "Sobre o curso, acho algo reutilizável para o futuro."
                 </p>
 
                 <div class="text-right">
-                    <a target="blank" href="http://andrewamorim.movimentoweb.com.br/" class="btn btn-primary">Saber mais</a>
+                    <a target="blank" href="http://andrewamorim.movimentoweb.com.br/" class="btn btn-outline-light">Saber mais</a>
                 </div>
 
             </div>
@@ -93,17 +95,17 @@
 
             <div class="col-8">
 
-                <h4 class="text-center " style="font-size:30px">Breno Farias</h4>
-
-                <p style="font-size: 15px;">
+                <h4 class="text-center " style="font-size:30px; color: white">Breno Farias</h4>
+<br><br>
+                <p style="font-size: 20px; color: white">
                     "A criação do projeto foi interessante pois agregou valor, experiência e
                     trabalho em equipe."
                 </p>
-                <p style="font-size: 15px;">
+                <p style="font-size: 20px; color: white">
                     "A ementa do curso é excelênte, a aprendizagem também."
                 </p>
                 <div class="text-right">
-                    <a target="blank" href="http://breno.movimentoweb.com.br/" class="btn btn-primary">Saber mais</a>
+                    <a target="blank" href="http://breno.movimentoweb.com.br/" class="btn btn-outline-light">Saber mais</a>
                 </div>
 
             </div>
@@ -119,19 +121,19 @@
 
             <div class="col-8">
 
-                <h4 class="text-center " style="font-size: 30px;">Camila Lídia</h4>
-
-                <p style="font-size: 15px;">
+                <h4 class="text-center " style="font-size: 30px; color: white">Camila Lídia</h4>
+<br><br>
+                <p style="font-size: 20px; color: white">
                     "Achei complicado, mas como estamos nos ajudando, tá mais
                     fácil e fluindo mais rápido que pensamos."
                 </p>
-                <p style="font-size: 15px;">
+                <p style="font-size: 20px; color: white">
                     "Gosteis do curso! foi uma experiência muito boa! Nunca pensei que iria gostar
-                    dessa área mas estamos aqui."
+                    dessa área, mas estamos aqui."
                 </p>
 
                 <div class="text-right">
-                    <a target="blank" href="http://mila06.movimentoweb.com.br/" class="btn btn-primary">Saber mais</a>
+                    <a target="blank" href="http://mila06.movimentoweb.com.br/" class="btn btn-outline-light">Saber mais</a>
                 </div>
             </div>
         </div>
@@ -144,17 +146,17 @@
 
             <div class="col-8">
 
-                <h4 class="text-center " style="font-size:30px">Carlos Henrique</h4>
-                <p style="font-size: 15px;">
+                <h4 class="text-center " style="font-size:30px; color: white">Carlos Henrique</h4>    <br><br>
+                <p style="font-size: 20px; color: white">
                     "Um projeto bastante interessante, com vários desafios e obstáculos."
                 </p>
-                <p style="font-size: 15px;">
+                <p style="font-size: 20px; color: white">
                     "Um curso bem interessante abrangendo a área de HTML CSS e PHP."
                 </p>
 
 
                 <div class="text-right">
-                    <a target="blank" href="http://carlosh.movimentoweb.com.br/" class="btn btn-primary">Saber mais</a>
+                    <a target="blank" href="http://carlosh.movimentoweb.com.br/" class="btn btn-outline-light">Saber mais</a>
                 </div>
 
             </div>
@@ -171,17 +173,17 @@
 
             <div class="col-8">
 
-                <h4 class="text-center " style="font-size:30px">Edvan Araujo</h4>
-
-                <p style="font-size: 15px;">
+                <h4 class="text-center " style="font-size:30px; color: white">Edvan Araujo</h4>
+<br><br>
+                <p style="font-size: 20px; color: white">
                     "O projeto foi uma experiência muito legal porém muito desafiadora."
                 </p>
-                <p style="font-size: 15px;">
+                <p style="font-size: 20px; color: white">
                     "Curso muito bom, me deu uma base muito boasobre os conceitos de programação."
                 </p>
 
                 <div class="text-right">
-                    <a target="blank" href="http://edsay12.movimentoweb.com.br/" class="btn btn-primary">Saber mais</a>
+                    <a target="blank" href="http://edsay12.movimentoweb.com.br/" class="btn btn-outline-light">Saber mais</a>
                 </div>
 
             </div>
@@ -197,18 +199,18 @@
 
             <div class="col-8">
 
-                <h4 class="text-center " style="font-size:30px">Jonas Rosa</h4>
-
-                <p style="font-size: 15px;">
+                <h4 class="text-center " style="font-size:30px; color: white">Jonas Rosa</h4>
+<br><br>
+                <p style="font-size: 20px; color: white">
                     "Achei o projeto desafiador, uma oportunidade muito boa de se desenvolver
                     individualmente e como equipe."
                 </p>
-                <p style="font-size: 15px;">
+                <p style="font-size: 20px; color: white">
                     "Um curso muito bom, que a gente passa a visualizar a programação de uma forma
                     nova e sobretudo entender como funciona, uma ótima experiência."
                 </p>
                 <div class="text-right">
-                    <a target="blank" href="http://jonas00.movimentoweb.com.br/" class="btn btn-primary">Saber mais</a>
+                    <a target="blank" href="http://jonas00.movimentoweb.com.br/" class="btn btn-outline-light">Saber mais</a>
                 </div>
 
             </div>
@@ -224,18 +226,17 @@
 
             <div class="col-8">
 
-                <h4 class="text-center " style="font-size:30px">Josué Ferreira</h4>
-
-                <p style="font-size: 15px;">
+                <h4 class="text-center " style="font-size:30px; color: white">Josué Ferreira</h4>
+<br><br>
+                <p style="font-size: 20px; color: white">
                  "Achei o projeto bem interativo, bom para unir a classe, bem interessante."
                 </p>
-                <p style="font-size: 15px;">
-                <h5></h5> "Muito bom, conheci pessoas legais e eu gostei do curso em si, das aulas, é
+                <p style="font-size: 20px; color: white">"Muito bom, conheci pessoas legais e eu gostei do curso em si, das aulas, é
                 isso."
                 </p>
 
                 <div class="text-right">
-                    <a target="blank" href="http://jj.movimentoweb.com.br/#" class="btn btn-primary">Saber mais</a>
+                    <a target="blank" href="http://jj.movimentoweb.com.br/#" class="btn btn-outline-light">Saber mais</a>
                 </div>
 
             </div>
@@ -251,17 +252,17 @@
 
             <div class="col-8">
 
-                <h4 class="text-center " style="font-size:30px">Kemelly Nascimento</h4>
-
-                <p style="font-size: 15px;">
+                <h4 class="text-center " style="font-size:30px; color: white">Kemelly Nascimento</h4>
+<br><br>
+                <p style="font-size: 20px; color: white">
                     "O projeto foi bastante desafiador mas ao mesmo tempo divertido e nos deu a
                     oportunidade de trabalhar em equipe."
                 </p>
-                <p style="font-size: 15px;">
+                <p style="font-size: 20px; color: white">
                     "O curso foi uma oportunidade incrível de aprendizagem."
                 </p>
                 <div class="text-right">
-                    <a target="blank" href="http://kemelly.movimentoweb.com.br/index.php?pg=inicial" class="btn btn-primary">Saber mais</a>
+                    <a target="blank" href="http://kemelly.movimentoweb.com.br/index.php?pg=inicial" class="btn btn-outline-light">Saber mais</a>
                 </div>
 
             </div>
@@ -277,13 +278,13 @@
 
             <div class="col-8">
 
-                <h4 class="text-center " style="font-size:30px">Luiz Fernando Leite</h4>
-
-                <p style="font-size: 15px;">
+                <h4 class="text-center " style="font-size:30px; color: white">Luiz Fernando Leite</h4>
+<br><br>
+                <p style="font-size: 20px; color: white">
                     "Como gerente do projeto, senti que o desafio era grande pois
                     tenho mais facilidade para codificar do que gerenciar equipes mas no final deu tudo certo."
                 </p>
-                <p style="font-size: 15px;">
+                <p style="font-size: 20px; color: white">
                     "estava com grandes expectativas por que já sou da área de programação mas nunca
                     tinha mexido com o ambiente web. E agora no final, descobri que a área web provavelmente será
                     meu
@@ -291,7 +292,7 @@
                     daqui pra frente."
                 </p>
                 <div class="text-right">
-                    <a target="blank" href="http://fernando.movimentoweb.com.br/" class="btn btn-primary">Saber mais</a>
+                    <a target="blank" href="http://fernando.movimentoweb.com.br/" class="btn btn-outline-light">Saber mais</a>
                 </div>
 
             </div>
@@ -307,17 +308,17 @@
 
             <div class="col-8">
 
-                <h4 class="text-center  " style="font-size:30px">Luiz Menezes</h4>
-
-                <p style="font-size: 15px;">
+                <h4 class="text-center  " style="font-size: 30px; color: white">Luiz Menezes</h4>
+<br><br>
+                <p style="font-size: 20px; color: white">
                     "Achei o projeto bom, legal e dinâmico."
                 </p>
-                <p style="font-size: 15px;">
+                <p style="font-size: 20px; color: white">
                     "Sobre o curso, foi uma experiência muito boa."
                 </p>
 
                 <div class="text-right">
-                    <a target="blank" href="http://luiz20.movimentoweb.com.br/" class="btn btn-primary">Saber mais</a>
+                    <a target="blank" href="http://luiz20.movimentoweb.com.br/" class="btn btn-outline-light">Saber mais</a>
                 </div>
 
             </div>
