@@ -70,7 +70,7 @@
   <style>
     #calendario {
       position: relative;
-      width: 50%;
+      width: 75%;
       margin: 0px auto;
     }
   </style>

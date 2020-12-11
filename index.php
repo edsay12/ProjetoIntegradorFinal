@@ -1,9 +1,8 @@
 <?php
 
-include_once "app/painelAdm/helpers/conexao.php";
+include_once "app/painelAdm/helpers/helperAdm.php";
 
-// Header
-include_once "app/site/paginas/includes/header.php";
+
 
 
 
@@ -15,33 +14,67 @@ if ($paginas) {
 
     switch ($_GET["pg"]) {
 
+        case 'cadastrarrecepsionista':
+
+            include_once "app/painelAdm/paginas/includes/header.php";
+            include_once "app\site\paginas\includes\cadastrarecepsionista.php";
+            break;
+
+        case 'cadastrarrecepsionista2':
+           
+            inserirrecepcionista();
+
+            break;
+
+
 
         case 'contato':
+            include_once "app/site/paginas/includes/header.php";
             include_once "app/site/paginas/contato.php";
+            include_once "app/site/paginas/includes/footer.php";
+
+            break;
+
+
+        case 'cadastrodemensagem':
+            include_once "app/site/paginas/includes/header.php";
+            cadastrodemensagem();
+            // include_once "app/site/paginas/contato.php";
+            include_once "app/site/paginas/includes/footer.php";
+
             break;
 
         case 'servicos':
+            include_once "app/site/paginas/includes/header.php";
             include_once "app/site/paginas/servicos.php";
+            include_once "app/site/paginas/includes/footer.php";
             break;
 
         case 'inicial':
+            include_once "app/site/paginas/includes/header.php";
             include_once "app/site/paginas/includes/navegacao.php";
             include_once "app/site/paginas/inicial.php";
+            include_once "app/site/paginas/includes/footer.php";
             break;
 
         case 'sobre':
+            include_once "app/site/paginas/includes/header.php";
             include_once "app/site/paginas/sobre.php";
+            include_once "app/site/paginas/includes/footer.php";
             break;
 
         default:
-        include_once "app/site/paginas/includes/navegacao.php";
+        include_once "app/site/paginas/includes/header.php";
+            include_once "app/site/paginas/includes/navegacao.php";
             include_once "app/site/paginas/inicial.php";
+            include_once "app/site/paginas/includes/footer.php";
             break;
     }
 } else {
+    include_once "app/site/paginas/includes/header.php";
     include_once "app/site/paginas/includes/navegacao.php";
     include_once "app/site/paginas/inicial.php";
+    include_once "app/site/paginas/includes/footer.php";
 }
 
-//footer
-include_once "app/site/paginas/includes/footer.php";
+

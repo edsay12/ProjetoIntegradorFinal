@@ -32,69 +32,104 @@ $dados = $resultdados->consultarBanco('SELECT * FROM pacientes');
 
 
                     <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title far icon-calendar_today">
-                                04 de Dezembro até 17 de Dezembro.
-                                <br>
-                               
-                            </h3>
-                        </div>
+                       
 
                         <!-- /.card-header -->
                         <div class="card-body">
-                        <a href="cpanel.php?pg=marcarconsulta" class="btn btn-success">Cadastrar</a>
-
-
-
-
-
+                            
+                            
+                            
+                            
+                            
                             <table id="example1" class="table table-bordered table-striped">
-                                
+                                <a href="cpanel.php?pg=marcarconsulta" class="btn btn-success">Cadastrar Pacientes</a>
+
                                 <thead>
                                     <tr class="text-center">
                                         <th>id</th>
                                         <th>Paciente</th>
                                         <th>RG</th>
                                         <th>CPF</th>
-                                         <th>medico</th>
+                                        <th>medico</th>
                                         <th>Recepcionista</th>
                                         <th>Prontuário</th>
 
-                                        <th>Marcar Nova Consulta</th>
-                                       
+
+
 
                                         <th>Ações</th>
-                                     
+
                                     </tr>
                                 </thead>
 
                                 <tbody>
 
-                                    <?php foreach($dados as $dadosusuarios) {  ?>
-                                    <tr class="text-center">
-                                        <td><?php echo $dadosusuarios["id_paciente"]  ?></td>
-                                        <td><?php echo $dadosusuarios["nome"]  ?></td>
-                                        <td><?php echo $dadosusuarios["rg"]  ?></td>
-                                        <td><?php echo $dadosusuarios["cpf"]  ?></td>
-                                        <td><?php echo $dadosusuarios["medico"]  ?></td>
+                                    <?php foreach ($dados as $dadosusuarios) {  ?>
+                                        <tr class="text-center">
+                                            <td><?php echo $dadosusuarios["data1"]  ?></td>
+                                            <td><?php echo $dadosusuarios["nome"]  ?></td>
+                                            <td><?php echo $dadosusuarios["rg"]  ?></td>
+                                            <td><?php echo $dadosusuarios["cpf"]  ?></td>
+                                            <td><?php echo $dadosusuarios["medico"]  ?></td>
 
-                                        <td>Jenny</th>
-                                        <td>3</td>
-                                        <td>02</td>
-                                        
-                            
-                    
-                                        <td>
-                                        <a class="btn btn-outline-info icon-pen" href="?pg=editarpacientes&id=<?php echo $dadosusuarios['id_paciente'] ?>"></a>
-                                          <a class="btn btn-outline-danger icon-delete_sweep" href="?pg=apagarpacientes&id=<?php echo $dadosusuarios['id_paciente'] ?>"></a>
-                                        </td> 
+                                            <td>Jenny</th>
+                                            <td> <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">
+                                                    Prontuário
+                                                </button>
+                                            </td>
+
+
+
+
+                                            <td>
+                                                <a class="btn btn-outline-info icon-pen" href="?pg=editarpacientes&id=<?php echo $dadosusuarios['id_paciente'] ?>"></a>
+                                                <a class="btn btn-outline-danger icon-delete_sweep" href="?pg=apagarpacientes&id=<?php echo $dadosusuarios['id_paciente'] ?>"></a>
+                                            </td>
                                         <?php   }  ?>
-                                    </tr>
+                                        </tr>
+
+
+
 
 
                                 </tbody>
 
                             </table>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content bg-gray">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel"> <i><b>Prontuário</b></i></h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-4 text-center"><img src="app/assets/img/iconfinder_8_5027891.png" alt=""></div>
+                                                <div class="col-7">
+                                                    <h4>Clinica Escola Senac</h4>-Luiz Fernando Menezes <br>-Clinico Geral <br>-11/12/2020
+                                                </div>
+                                                ------------------------------------------------------------------------------------------------
+                                                <div class="text-rigth"> Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem deleniti accusamus quisquam tempora molestias dolore aspernatur exercitationem quae, nihil minus ullam expedita, at dolor voluptatum soluta rem et quod.</div>
+
+
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
                         </div>
                         <!-- /.card-body -->
                     </div>
