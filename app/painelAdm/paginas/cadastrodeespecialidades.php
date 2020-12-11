@@ -1,3 +1,9 @@
+
+
+
+
+
+
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header  ">
@@ -11,10 +17,10 @@
                     <div class="text-center">
                         <img src="app\painelAdm\dist\img\undraw_medicine_b1ol__2_-removebg-preview.png" class="w-50" alt="">
                     </div>
-                    <form action="">
+                    <form action="cpanel.php?pg=cadastrodeespecialidades" method="POST" >
                         <div class="form-group text-center col-md-12">
 
-                            <input class="form-control" type="text" autofocus placeholder="Digite a Especialidade!">
+                            <input class="form-control" name="especialidade" autofocus placeholder="Digite a Especialidade!">
 
                         </div>
                         <div class="class text-center">
