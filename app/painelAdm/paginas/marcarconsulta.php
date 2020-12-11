@@ -53,17 +53,10 @@ $dados = $resultdados->consultarBanco('SELECT * FROM profissionais');
                                 </select>
 
                             </div>
-                            <div class="form-group   col-md-6">
+                            <div class="form-group   col-md-6" name="data1" >
                                 <label for="inputState">Data</label>
-
-                                <select id="inputState" class="form-control">
-                                    <option selected>Data</option>
-                                    <option>...</option>
-                                    <option>...</option>
-                                    <option>...</option>
-
-                                </select>
-                            </div>
+                                <input type="date"  name="data1" class="form-control " >
+                                
                         </div>
 
                         <div class="text-center">

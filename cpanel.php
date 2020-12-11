@@ -29,7 +29,7 @@ if ($cpanel) {
             include_once "app/painelAdm/paginas/includes/navegacao.php";
             include_once "app/painelAdm/paginas/agenda.php";
 
-            include_once "app/painelAdm/paginas/includes/footer.php";
+            // include_once "app/painelAdm/paginas/includes/footer.php";
 
 
             break;

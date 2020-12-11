@@ -100,6 +100,7 @@ function inserirpaciente()
         $rg = trim($_POST['rg']);
         $cpf = trim($_POST['cpf']);
         $medico = trim($_POST['medico']);
+        $data1 = trim($_POST['data1']);
 
         //Validar as variáveis e encriptar a senha
         $parametros = array(
@@ -107,13 +108,14 @@ function inserirpaciente()
             ':nome' => $nome,
             ':rg' => $rg,
             ':cpf' => $cpf,
-            ':medico' => $medico
+            ':medico' => $medico,
+            ':data1' => $data1
 
         );
 
         $resultDados = new Conexao();
-        $resultDados->intervencaoNoBanco('INSERT INTO pacientes(nome, rg, cpf,medico) 
-    VALUES (:nome, :rg, :cpf,:medico)', $parametros);
+        $resultDados->intervencaoNoBanco('INSERT INTO pacientes(nome, rg, cpf,medico,data1) 
+    VALUES (:nome, :rg, :cpf,:medico,:data1)', $parametros);
 
         //incluir a pagina que será exibida após cadastrar um usuario aqui:
 
@@ -216,7 +218,7 @@ function atualizarprofissionais()
 
     //pegando variaveis via POST
     $id_profi = trim($_POST['id_profi']);
-    $nome = trim($_POST['nome']);
+    $nomemedico = trim($_POST['nomemedico']);
     $rg = trim($_POST['rg']);
     $cpf = trim($_POST['cpf']);
     $especialidade = trim($_POST['especialidade']);
@@ -225,7 +227,7 @@ function atualizarprofissionais()
     //validando as variaveis
     $parametros = array(
         ':id_profi' => $id_profi,
-        ':nome' => $nome,
+        ':nomemedico' => $nomemedico,
         ':rg' => $rg,
         ':cpf' => $cpf,
         ':especialidade' => $especialidade
@@ -234,7 +236,7 @@ function atualizarprofissionais()
 
     //atualizando no banco
     $atualizaUsuario = new Conexao();
-    $atualizaUsuario->intervencaoNoBanco('UPDATE pacientes SET nome = :nome, rg = :rg, cpf = :cpf,especialidade = :especialidade   WHERE id_profi = :id_profi', $parametros);
+    $atualizaUsuario->intervencaoNoBanco('UPDATE profissionais SET nomemedico = :nomemedico, rg = :rg, cpf = :cpf,especialidade = :especialidade WHERE id_profi = :id_profi', $parametros);
 
     //incluir a pagina que será exibida quando um usuario for atualizado aqui:
     include_once "app/painelAdm/paginas/profissionais.php";

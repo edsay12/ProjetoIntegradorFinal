@@ -3,7 +3,7 @@ $resultdados = new Conexao();
 
 $dadopaciente = consultaSQL('pacientes', 'id_paciente', $_GET["id"]);
 
-$dados1 = $resultdados->consultarBanco('SELECT * FROM pacientes');
+$dados1 = $resultdados->consultarBanco('SELECT * FROM profissionais');
 
 ?>
 
@@ -42,18 +42,18 @@ $dados1 = $resultdados->consultarBanco('SELECT * FROM pacientes');
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">rg</label>
-                                <input type="text" name="rg" value="<?php echo $dados['rg'] ?>" class="form-control">
+                                <input type="text" name="rg" value="<?php echo $dados['rg'] ?>" class="form-control rg">
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">cpf</label>
-                                <input type="text" name="cpf" value="<?php echo $dados['cpf'] ?>" class="form-control">
+                                <input type="text" name="cpf" value="<?php echo $dados['cpf'] ?>" class="form-control cpf">
                             </div>
-                            
+                            <label for="exampleFormControlInput1">Medico</label>
                             <select id="inputState" name="medico" class="form-control">
 
                                 <?php foreach ($dados1 as $dadosusuarios) {  ?>
-
-                                    <option name="medico" selected> <?php echo $dadosusuarios["medico"]  ?> </option>
+                              
+                                    <option name="medico" selected> <?php  echo $dadosusuarios["especialidade"]  ?> / <?php  echo $dadosusuarios["nomemedico"]  ?> </option>
                                 <?php  } ?>
                             </select>
 
