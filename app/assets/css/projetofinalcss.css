@@ -1,18 +1,24 @@
 /* Meu Css */
 
 body{
-  background-color: cornflowerblue;
+  background-color: cornflowerblue; 
 }
 
 .icon-event_note{
 font-size: 80px;
 }
 
+
+
 #navega{
-background-color: #ffffff;
+background-color: #AFE0FF;
 
 }
 
+@font-face{
+  font-family: "san";
+  src: url(../fonts/Sanchezregular.otf);
+}
 
 
 #textos{
@@ -31,7 +37,7 @@ justify-content: right;
 }
 
 #agenda2{
-background-color: #5999d4;
+background-color:#AFE0FF;
 }
 /* Cor do footer */
 
@@ -215,3 +221,34 @@ bottom: -15px;
 }
 
 
+#botaoesq{
+  position: absolute;
+  left: -110px;
+}
+
+.icon-arrow-left{
+  color: orange;
+  font-size: 30px;
+}
+.icon-arrow-right{
+  color: orange;
+  font-size: 30px;
+}
+
+#botaodirei{
+
+  position: absolute;
+  right: -112px;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#back{
+  background-image: url(../img/navegacao/sobre.png);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
