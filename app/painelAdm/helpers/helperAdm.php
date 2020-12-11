@@ -141,6 +141,7 @@ function inserirespecialidade()
 
         );
 
+   
         $resultDados = new Conexao();
         $resultDados->intervencaoNoBanco('INSERT INTO especialidades(especialidade) 
     VALUES (:especialidade)', $parametros);
@@ -150,6 +151,67 @@ function inserirespecialidade()
         include_once "app/painelAdm/paginas/cadastrodeespecialidades.php";
     } else {
         include_once "app/painelAdm/paginas/cadastrodeespecialidades.php";
+        // header("Location: ?pg=profissionais");
+    }
+}
+function inserirrecepcionista()
+{
+
+    if ($_POST) {
+
+        //Pegando as variáveis via post
+        $nome = trim($_POST['nome']);
+        $senha = trim($_POST['senha']);
+
+        //Validar as variáveis e encriptar a senha
+        $parametros = array(
+
+            ':nome' => $nome,
+            ':senha' => $senha
+
+        );
+
+        $resultDados = new Conexao();
+        $resultDados->intervencaoNoBanco('INSERT INTO recepcionistas(nome,senha) 
+    VALUES (:nome,:senha)', $parametros);
+
+        //incluir a pagina que será exibida após cadastrar um usuario aqui:
+
+        include_once "app/site/paginas/login.php";
+    } else {
+        include_once "app/site/painelAdm/paginas/login.php";
+        // header("Location: ?pg=profissionais");
+    }
+}
+
+function cadastrodemensagem()
+{
+
+    if ($_POST) {
+
+        //Pegando as variáveis via post
+        $nome = trim($_POST['nome']);
+        $email = trim($_POST['email']);
+        $mensagem = trim($_POST['mensagem']);
+
+        //Validar as variáveis e encriptar a senha
+        $parametros = array(
+
+            ':nome' => $nome,
+            ':email' => $email,
+            ':mensagem' => $mensagem
+
+        );
+
+        $resultDados = new Conexao();
+        $resultDados->intervencaoNoBanco('INSERT INTO contato(nome,email,mensagem) 
+    VALUES (:nome,:email,:mensagem)', $parametros);
+
+        //incluir a pagina que será exibida após cadastrar um usuario aqui:
+
+        include_once "app/site/paginas/contato.php";
+    } else {
+        include_once "app/site/paginas/contato.php";
         // header("Location: ?pg=profissionais");
     }
 }

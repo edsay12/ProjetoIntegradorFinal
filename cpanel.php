@@ -23,6 +23,15 @@ if ($cpanel) {
         case 'login':
             include_once "app/site/paginas/login.php";
             break;
+            
+       
+ 
+
+         
+
+
+
+
 
         case 'agenda':
             include_once "app/painelAdm/paginas/includes/header.php";
@@ -30,8 +39,14 @@ if ($cpanel) {
             include_once "app/painelAdm/paginas/agenda.php";
 
             // include_once "app/painelAdm/paginas/includes/footer.php";
+            break;
 
+        case 'solicitaçaocontato':
+            include_once "app/painelAdm/paginas/includes/header.php";
+            include_once "app/painelAdm/paginas/includes/navegacao.php";
+            include_once "app/painelAdm/paginas/solicitaçaocontato.php";
 
+            include_once "app/painelAdm/paginas/includes/footer.php";
             break;
 
         case 'cadastrodemedicos':
@@ -91,6 +106,15 @@ if ($cpanel) {
             $apagarpacientes = new Conexao();
             $apagarpacientes->intervencaoNoBanco('DELETE FROM pacientes WHERE id_paciente = :id_paciente', $parametros);
             header('location: ?pg=pacientes');
+            break;
+
+        case 'apagarcontato':
+            $parametros = array(
+                ':id_contato' => $_GET['id']
+            );
+            $apagarpacientes = new Conexao();
+            $apagarpacientes->intervencaoNoBanco('DELETE FROM contato WHERE id_contato = :id_contato', $parametros);
+            header('location: ?pg=solicitaçaocontato');
             break;
 
         case 'cadastrodeespecialidades':
