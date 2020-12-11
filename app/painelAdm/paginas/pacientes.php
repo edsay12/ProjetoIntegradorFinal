@@ -56,9 +56,13 @@ $dados = $resultdados->consultarBanco('SELECT * FROM pacientes');
                                         <th>Paciente</th>
                                         <th>RG</th>
                                         <th>CPF</th>
+                                         <th>medico</th>
                                         <th>Recepcionista</th>
                                         <th>Prontuário</th>
+
                                         <th>Marcar Nova Consulta</th>
+                                       
+
                                         <th>Ações</th>
                                      
                                     </tr>
@@ -72,6 +76,8 @@ $dados = $resultdados->consultarBanco('SELECT * FROM pacientes');
                                         <td><?php echo $dadosusuarios["nome"]  ?></td>
                                         <td><?php echo $dadosusuarios["rg"]  ?></td>
                                         <td><?php echo $dadosusuarios["cpf"]  ?></td>
+                                        <td><?php echo $dadosusuarios["medico"]  ?></td>
+
                                         <td>Jenny</th>
                                         <td>3</td>
                                         <td>02</td>
@@ -79,10 +85,8 @@ $dados = $resultdados->consultarBanco('SELECT * FROM pacientes');
                             
                     
                                         <td>
-                                            <a class="btn btn-outline-warning icon-pencil" href="?pg=usuario_editar&id=<?php // echo $dadosusuarios['id_usuario'] 
-                                                                                                                        ?>"></a>
-                                            <a class="btn btn-outline-danger icon-delete_sweep" href="?pg=usuariodeletar&id=<?php // echo $dadosusuarios['id_usuario'] 
-                                                                                                                            ?>"></a>
+                                        <a class="btn btn-outline-info icon-pen" href="?pg=editarpacientes&id=<?php echo $dadosusuarios['id_paciente'] ?>"></a>
+                                          <a class="btn btn-outline-danger icon-delete_sweep" href="?pg=apagarpacientes&id=<?php echo $dadosusuarios['id_paciente'] ?>"></a>
                                         </td> 
                                         <?php   }  ?>
                                     </tr>

@@ -1,3 +1,13 @@
+<?php $resultdados = new Conexao();
+
+$dados = $resultdados->consultarBanco('SELECT * FROM especialidades');
+
+?>
+
+
+
+
+
 <div class="content-wrapper">
     <!-- Content Header (Page header) mantem tudo no seu devido lugar -->
     <div class="content-header">
@@ -10,7 +20,7 @@
 
 
             <div class="row">
-            <div class="col-1 mt-4"> </div>
+                <div class="col-1 mt-4"> </div>
                 <div class="col-3 mt-4"> <img src="app/painelAdm/dist/img/med.png" alt=""> </div>
                 <div class="col-6  mb-3">
                     <form action="?pg=cadastrodemedicos" method="POST">
@@ -21,24 +31,26 @@
                         <div class="row">
                             <div class="form-group  col-md-6">
                                 <label for="inputEmail4">RG</label>
-                                <input class="rg form-control" type="text" name="rg"   name="numbers" placeholder="9.858.659" id="inputEmail4">
+                                <input class="rg form-control" type="text" name="rg" name="numbers" placeholder="9.858.659" id="inputEmail4">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputPassword4">CPF</label>
-                                <input type="text"  name="cpf" class="form-control cpf" placeholder="133.151.154-56" id="inputPassword4">
+                                <input type="text" name="cpf" class="form-control cpf" placeholder="133.151.154-56" id="inputPassword4">
                             </div>
-                            
-                        </div>
-                        <div class="form-group" >
+
                         </div>
                         <div class="form-group">
-                            <label for="inputState">Especialidade</label>
-                            <select id="inputState" class="form-control">
-                                <option selected>marcar</option>
-                                <option>...</option>
-                                <option>...</option>
-                                <option>...</option>
+                        </div>
+                        <div class="form-group">
+                            <label name="especialidade"  for="inputState" >Especialidade</label>
+                            <select id="inputState" name="especialidade" class="form-control">
+
+                                <?php foreach ($dados as $dadosusuarios) {   ?>
+                                <option name="especialidade"  ><?php echo $dadosusuarios["especialidade"] ?></option>
+
+                                <?php   } ?>
                             </select>
+
                         </div>
 
 
