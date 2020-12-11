@@ -1,3 +1,13 @@
+<?php $resultdados = new Conexao();
+
+$dados = $resultdados->consultarBanco('SELECT * FROM profissionais');
+
+?>
+
+
+
+
+
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -26,43 +36,54 @@
                     <div class="card">
                         <div class="card-header">
                             <h3 class="card-title far icon-calendar_today">
-                                04 de Dezembro 
+                                04 de Dezembro
                             </h3>
+                        
+                          
                         </div>
+
 
                         <!-- /.card-header -->
                         <div class="card-body">
-
+  <a href="cpanel.php?pg=cadastrodemedicos" class="btn btn-success">Cadastrar</a>
 
 
 
 
 
                             <table id="example1" class="table table-bordered table-striped">
+
+
+
                                 <thead>
                                     <tr class="text-center">
                                         <th>id</th>
                                         <th>Nome</th>
                                         <th>RG</th>
                                         <th>CPF</th>
-                                        <th>Especialidades</th>
+                                        <th>especialidade</th>
+
                                         <th>Açoes</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="text-center">
-                                        <th>02</th>
-                                        <th>Joao</th>
-                                        <th>7.234.234</th>
-                                        <th>123.123.123-23</th>
-                                        <th></th>
-                                        
-                                        <th> 
-                                            <a class="btn btn-outline-warning icon-pencil" href="?pg=usuario_editar&id=<?php echo $dadosusuarios['id_usuario'] ?>"></a>
-                                            <a class="btn btn-outline-danger icon-delete_sweep" href="?pg=usuariodeletar&id=<?php echo $dadosusuarios['id_usuario'] ?>"></a>
-                                        </th>
-                                    </tr>
+                                    <?php foreach ($dados as $dadosusuario) {
+                                    ?>
 
+                                        <tr class="text-center">
+                                            <td><?php echo $dadosusuario["id_profi"]  ?></td>
+                                            <td><?php echo $dadosusuario["nomemedico"]  ?></td>
+                                            <td><?php echo $dadosusuario["rg"]  ?></td>
+                                            <td><?php echo $dadosusuario["cpf"]  ?></td>
+                                            <td><?php echo $dadosusuario["especialidade"]  ?></td>
+
+
+                                            <th>
+                                                <a class="btn btn-outline-warning icon-pencil" href="?pg=editarprofissionais&id=<?php echo $dadosusuario['id_profi'] ?>"></a>
+                                                <a class="btn btn-outline-danger icon-delete_sweep" href="?pg=apagarprofissionais&id=<?php echo $dadosusuario['id_profi'] ?>"></a>
+                                            </th>
+                                        </tr>
+                                    <?php  } ?>
 
                                 </tbody>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,9 +12,13 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="app/assets/img/footerphoto.gif">
     <!-- Icomoon -->
-    <link rel="stylesheet" href="app/assets/img/icons/icomoon.css">
+    <link rel="stylesheet" href="app/assets/icon/icon.css">
+
     <!-- Meu CSS -->
     <link rel="stylesheet" href="app/assets/css/projetofinalcss.css">
+    
+    
+
 </head>
 
 <body>
@@ -25,7 +29,7 @@
     <div class="container-fluid table-light alert-link">
         <div class="container">
             <nav class="navbar  navbar-expand-lg navbar-info">
-                <img src="app/assets/img/senacmenu.png" alt="" class="rounded-circle p-2">
+                <img src="app/assets/img/miniatura.png" alt="" class=" p-2">
                 <a class="navbar-brand" href="#"></a>
                 <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                     <ul class="navbar-nav mr-auto">
@@ -35,8 +39,6 @@
                             <a class="nav-link <?php echo (($_GET['pg'] == 'sobre') ? 'btn py-2 btn-outline-primary' : ''); ?>" href="index.php?pg=sobre"><span class=""></span>Sobre</a></li>
                         <li class="nav-item active">
                             <a class="nav-link <?php echo (($_GET['pg'] == 'contato') ? 'btn py-2 btn-outline-primary' : ''); ?>" href="index.php?pg=contato"> <span class=""> Contato</span></a></li>
-                        <li class="nav-item active">
-                            <a class="nav-link <?php echo (($_GET['pg'] == 'servicos') ? 'btn py-2 btn-outline-primary' : ''); ?>" href="index.php?pg=servicos"> <span class="">Serviços</span></a></li>
                     </ul>
 
 

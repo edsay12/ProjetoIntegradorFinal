@@ -12,52 +12,76 @@
   <link rel="stylesheet" href="app/painelAdm/plugins/fontawesome-free/css/all.min.css">
   <!-- icheck bootstrap -->
   <link rel="stylesheet" href="app/painelAdm/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+
+  <!-- Meu CSS -->
+  <link rel="stylesheet" href="app/assets/css/painel.css">
+
   <!-- Theme style -->
   <link rel="stylesheet" href="app/painelAdm/dist/css/adminlte.min.css">
 </head>
 
 <body class="hold-transition login-page">
-  <div class="login-box">
-    <div class="login-logo"><a href="#"> <h1><b> Painel Adm </b></h1></div>
-    <!-- /.login-logo -->
-    <div class="card">
-      <div class="card-body login-card-body">
-        <p class="login-box-msg">Preencha com seus dados para iniciar uma Sessão.</p>
 
-<?php if (isset($erro)) {  ?>
+  <?php if (isset($erro)) {  ?>
 
-  <div class="alert alert-danger" id="erro" ><?php echo $erro; ?></div>
-<?php }  ?>
+    <div class="alert alert-danger" id="erro"><?php echo $erro; ?></div>
+  <?php }  ?>
 
 
-
-
-        <form action="cpanel.php?pg=cpanel" method="post">
-          <div class="input-group mb-3">
-            <input type="text" name="usuario" class="form-control" placeholder="E-mail">
-            <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-envelope"></span>
-              </div>
-            </div>
-          </div>
-          <div class="input-group mb-3">
-            <input type="password" name="senha" class="form-control" placeholder="Senha">
-            <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-lock"></span>
-              </div>
-            </div>
-          </div>
-          <div class="social-auth-links text-center mb-3">
-            <button type="submit" class="btn btn-block btn-primary mb-2"><strong>Entrar</strong></button>            
-            <a href="index.php?pg=inicial" class="btn btn-block btn-warning">Voltar</a>
-          </div>
+  <div class="container">
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+    <br><br>
+    <div class="content">
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <form method="post" action="">
+          <h1>Login</h1>
+      
         </form>
       </div>
-      <!-- /.login-card-body -->
+
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action="">
+          <h1>Painel Adm</h1>
+
+          
+          <p>
+            <label for="email_cad">Usuário:</label>
+            <input id="email_cad" name="email_cad" required="required" type="text" placeholder="clinicasenac@hotmail.com" />
+          </p>
+
+
+
+         
+          
+
+          <p>
+            <label for="senha_cad">Senha:</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="" />
+          </p>
+
+          <a href="cpanel.php?pg=agenda" class="btn btn-block btn-primary">Entrar</a>
+
+          
+          <a href="index.php?pg=inicial" class="btn btn-block btn-warning my-4">Voltar</a>
+          <hr style="border-color: black;" >
+          <div style="text-align: center;" ><a   href="" type="submit" class=" "><strong>Cadastro de Recepcionista</strong></a> </div>
+        </form>
+      </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
   <!-- /.login-box -->
 
   <!-- jQuery -->
@@ -66,5 +90,3 @@
   <script src="app/painelAdm/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- AdminLTE App -->
   <script src="app/painelAdm/dist/js/adminlte.min.js"></script>
-
-
