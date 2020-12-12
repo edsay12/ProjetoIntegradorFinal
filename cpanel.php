@@ -49,6 +49,7 @@ if ($cpanel) {
             include_once "app/painelAdm/paginas/includes/footer.php";
             break;
 
+
         case 'cadastrodemedicos':
             include_once "app/painelAdm/paginas/includes/header.php";
             include_once "app/painelAdm/paginas/includes/navegacao.php";
@@ -186,6 +187,31 @@ if ($cpanel) {
 
 
             break;
+        case 'marcarconsultaagenda':
+            include_once "app/painelAdm/paginas/includes/header.php";
+            include_once "app/painelAdm/paginas/includes/navegacao.php";
+            include_once "app/painelAdm/paginas/marcarconsultaagenda.php";
+
+            include_once "app/painelAdm/paginas/includes/footer.php";
+
+
+            break;
+
+
+
+        case 'eventos':
+           
+            include_once "app\painelAdm\calendario\cadastrar_evento.php";
+         
+        case 'contatovisu':
+            include_once "app/painelAdm/paginas/includes/header.php";
+            include_once "app/painelAdm/paginas/includes/navegacao.php";
+            include_once "app/painelAdm/paginas/visualizarcontato.php";
+            include_once "app/painelAdm/paginas/includes/footer.php";
+          
+
+            break;
+
 
         default:
 

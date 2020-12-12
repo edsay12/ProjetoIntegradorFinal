@@ -69,7 +69,7 @@ $dados = $resultdados->consultarBanco('SELECT * FROM contato');
 
                                             
                                             <td>
-                                                <a class="btn btn-outline-info icon-pen" href="?pg=editarpacientes&id=<?php echo $dadosusuarios['id_contato'] ?>"></a>
+                                                <a class="btn btn-outline-info icon-pen" href="?pg=contatovisu&id=<?php echo $dadosusuarios['id_contato'] ?>"></a>
                                                 <a class="btn btn-outline-danger icon-delete_sweep" href="?pg=apagarcontato&id=<?php echo $dadosusuarios['id_contato'] ?>"></a>
                                             </td>
                                         <?php   }  ?>

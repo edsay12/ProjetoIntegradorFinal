@@ -13,7 +13,7 @@ $dados = $resultdados->consultarBanco('SELECT * FROM profissionais');
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Marcar Consulta</h1>
+                    <h1 class="m-0">Cadastro de Pacientes</h1>
                     
                 </div>
             </div>
@@ -55,14 +55,17 @@ $dados = $resultdados->consultarBanco('SELECT * FROM profissionais');
                             </div>
                             <div class="form-group   col-md-6" name="data1" >
                                 <label for="inputState">Data</label>
-                                <input type="date" name="data1" class="form-control " >
+                                <input type="date"  name="data1" class="form-control " >
                                 
                         </div>
+
+
 
                         <div class="text-center">
                             <button type="submit" class="btn btn-info btn-lg btn-block"> Marcar<span class="icon-cheveron-right"></span> </button>
                         </div>
                     </form>
+                    
                 </div>
                 <div class="col-3"></div>
             </div>
