@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `contato` (
   PRIMARY KEY (`id_contato`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
--- Copiando dados para a tabela projetointegradorfinal.contato: ~2 rows (aproximadamente)
+-- Copiando dados para a tabela projetointegradorfinal.contato: ~1 rows (aproximadamente)
 /*!40000 ALTER TABLE `contato` DISABLE KEYS */;
 REPLACE INTO `contato` (`id_contato`, `nome`, `email`, `mensagem`) VALUES
 	(3, 'asdasdasd', 'asdasdasdas', 'dasdasdasdas');
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `especialidades` (
   PRIMARY KEY (`id_espec`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
--- Copiando dados para a tabela projetointegradorfinal.especialidades: ~3 rows (aproximadamente)
+-- Copiando dados para a tabela projetointegradorfinal.especialidades: ~4 rows (aproximadamente)
 /*!40000 ALTER TABLE `especialidades` DISABLE KEYS */;
 REPLACE INTO `especialidades` (`id_espec`, `especialidade`, `dataCriacao`, `dataAtualizacao`) VALUES
 	(5, 'psicologo', '2020-12-09 17:13:53', '2020-12-09 17:13:53'),
@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `eventos` (
   PRIMARY KEY (`id_eventos`)
 ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
--- Copiando dados para a tabela projetointegradorfinal.eventos: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela projetointegradorfinal.eventos: ~3 rows (aproximadamente)
 /*!40000 ALTER TABLE `eventos` DISABLE KEYS */;
 REPLACE INTO `eventos` (`title`, `start`, `id_eventos`, `medico`) VALUES
 	('   Edvan Da Silva Araujo', '2020-12-24', 6, '2020-12-11'),
@@ -114,7 +114,7 @@ CREATE TABLE IF NOT EXISTS `recepcionistas` (
   PRIMARY KEY (`id_recep`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
--- Copiando dados para a tabela projetointegradorfinal.recepcionistas: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela projetointegradorfinal.recepcionistas: ~1 rows (aproximadamente)
 /*!40000 ALTER TABLE `recepcionistas` DISABLE KEYS */;
 REPLACE INTO `recepcionistas` (`id_recep`, `nome`, `senha`, `dataCriacao`, `dataAtualizacao`) VALUES
 	(1, 'juliana abreu', '123456', '2020-12-11 20:55:26', '2020-12-11 20:55:26');

@@ -40,24 +40,13 @@ $dados = $resultdados->consultarBanco('SELECT * FROM profissionais');
                             </div>
 
                         </div>
-                        <div class="row">
-                            <div class="form-group   col-md-6">
-                                <label  name="medico" for="inputState">Médicos</label>
-
-                                
-                                <select id="inputState" name="medico" class="form-control">
-                                    <?php  foreach($dados as $dadosusuarios) {   ?>
-
-                                    <option  name="medico" selected> <?php  echo $dadosusuarios["especialidade"]  ?> / <?php  echo $dadosusuarios["nomemedico"]  ?> </option>
-                                 <?php  } ?>
-                                </select>
-
-                            </div>
-                            <div class="form-group   col-md-6" name="data1" >
+                      
+                            
+                            <div class="form-group  " name="data1" >
                                 <label for="inputState">Data</label>
                                 <input type="date"  name="data1" class="form-control " >
                                 
-                        </div>
+                                </div>
 
 
 

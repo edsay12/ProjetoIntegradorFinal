@@ -9,8 +9,9 @@
                             
         $nome = $_POST["nome"];
         $data = $_POST["data"];
+        $medico = $_POST["medico"];
         
-        $query = "INSERT INTO `eventos` (`title`, `start`) VALUES ('$nome', '$data')";
+        $query = "INSERT INTO `eventos` (`title`, `start`,`medico`) VALUES ('$nome', '$data','$medico')";
         
         $exec = $conexao->exec($query);                         
         

@@ -118,6 +118,12 @@
               <p>Solicitaçoes de Marcaçao</p>
             </a>
           </li>
+          <li class="nav-item  <?php echo (($_GET['pg'] == 'marcaçoes') ? 'bg-primary' : ''); ?>  ">
+            <a href="?pg=marcaçoes" class="nav-link">
+              <i class="far icon-user nav-icon"></i>
+              <p>marcaçoes</p>
+            </a>
+          </li>
 
 
 

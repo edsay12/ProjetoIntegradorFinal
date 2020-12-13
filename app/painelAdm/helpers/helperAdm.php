@@ -99,7 +99,7 @@ function inserirpaciente()
         $nome = trim($_POST['nome']);
         $rg = trim($_POST['rg']);
         $cpf = trim($_POST['cpf']);
-        $medico = trim($_POST['medico']);
+      
         $data1 = trim($_POST['data1']);
 
         //Validar as variáveis e encriptar a senha
@@ -108,14 +108,13 @@ function inserirpaciente()
             ':nome' => $nome,
             ':rg' => $rg,
             ':cpf' => $cpf,
-            ':medico' => $medico,
             ':data1' => $data1
 
         );
 
         $resultDados = new Conexao();
-        $resultDados->intervencaoNoBanco('INSERT INTO pacientes(nome, rg, cpf,medico,data1) 
-    VALUES (:nome, :rg, :cpf,:medico,:data1)', $parametros);
+        $resultDados->intervencaoNoBanco('INSERT INTO pacientes(nome, rg, cpf,data1) 
+    VALUES (:nome, :rg, :cpf,:data1)', $parametros);
 
         //incluir a pagina que será exibida após cadastrar um usuario aqui:
 
@@ -125,7 +124,7 @@ function inserirpaciente()
         // header("Location: ?pg=profissionais");
     }
 }
-
+// 
 function inserirespecialidade()
 {
 
@@ -252,7 +251,7 @@ function atualizarpacientes()
     $nome = trim($_POST['nome']);
     $rg = trim($_POST['rg']);
     $cpf = trim($_POST['cpf']);
-    $medico = trim($_POST['medico']);
+    
 
 
     //validando as variaveis
@@ -261,13 +260,13 @@ function atualizarpacientes()
         ':nome' => $nome,
         ':rg' => $rg,
         ':cpf' => $cpf,
-        ':medico' => $medico
+       
 
     );
 
     //atualizando no banco
     $atualizaUsuario = new Conexao();
-    $atualizaUsuario->intervencaoNoBanco('UPDATE pacientes SET nome = :nome, rg = :rg, cpf = :cpf,medico = :medico   WHERE id_paciente = :id_paciente', $parametros);
+    $atualizaUsuario->intervencaoNoBanco('UPDATE pacientes SET nome = :nome, rg = :rg, cpf = :cpf   WHERE id_paciente = :id_paciente', $parametros);
 
     //incluir a pagina que será exibida quando um usuario for atualizado aqui:
     include_once "app/painelAdm/paginas/pacientes.php";

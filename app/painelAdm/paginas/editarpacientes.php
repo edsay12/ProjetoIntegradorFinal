@@ -48,14 +48,7 @@ $dados1 = $resultdados->consultarBanco('SELECT * FROM profissionais');
                                 <label for="exampleFormControlInput1">cpf</label>
                                 <input type="text" name="cpf" value="<?php echo $dados['cpf'] ?>" class="form-control cpf">
                             </div>
-                            <label for="exampleFormControlInput1">Medico</label>
-                            <select id="inputState" name="medico" class="form-control">
-
-                                <?php foreach ($dados1 as $dadosusuarios) {  ?>
-                              
-                                    <option name="medico" selected> <?php  echo $dadosusuarios["especialidade"]  ?> / <?php  echo $dadosusuarios["nomemedico"]  ?> </option>
-                                <?php  } ?>
-                            </select>
+                            
 
 
                             <input type="hidden" name="id_paciente" value="<?php echo $dados['id_paciente'] ?>">

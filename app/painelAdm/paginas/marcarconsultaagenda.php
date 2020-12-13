@@ -1,6 +1,6 @@
 <?php
 $resultdados = new Conexao();
-
+$dados1 = $resultdados->consultarBanco('SELECT * FROM profissionais');
 $dadopaciente = consultaSQL('pacientes', 'id_paciente', $_GET["id"]);
 
 
@@ -36,19 +36,38 @@ $dadopaciente = consultaSQL('pacientes', 'id_paciente', $_GET["id"]);
 
                 <div>
                     <form id="novo_evento" action="cpanel.php?pg=eventos" method="post">
-                        Paciente/Medico: <input class="form-control" disabled type="text" name="nome" value="   <?php echo $dados['nome'] ?>" required /><br /><br />
+                        <!-- Nao por como disable pois pode nao funcionar -->
+                        Paciente/Medico: <input class="form-control" type="text" name="nome" value="   <?php echo $dados['nome'] ?>" required /><br /><br />
 
                         Data da consulta: <input class="form-control" type="date" name="data" required /><br /><br />
+
+
+
+
+                        <div class="form-group ">
+                            <label name="medico" for="inputState">Médicos</label>
+
+
+                            <select id="inputState" name="medico" class="form-control">
+                                <?php foreach ($dados1 as $dadosusuarios) {   ?>
+
+                                    <option name="medico" selected> <?php echo $dadosusuarios["especialidade"]  ?> / <?php echo $dadosusuarios["nomemedico"]  ?> </option>
+                                <?php  } ?>
+                            </select>
+
+                        </div>
+
                         <button class="btn btn-secondary" type="submit"> Cadastrar novo evento </button>
+
                     </form>
                 </div>
 
             </div>
 
+    <?php }   ?>
         </div>
 
 
-    <?php }   ?>
 
 </div>
 
