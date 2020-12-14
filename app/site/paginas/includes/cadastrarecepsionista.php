@@ -11,11 +11,9 @@
         <form action="index.php?pg=cadastrarrecepsionista2" method="POST">
             <div class="form-group ">
                 <label for="nome"><strong>Nome</strong></label>
-                <input type="text" required name="nome" class="form-control" id="nome" placeholder="Digite seu nome">
+                <input type="text" required name="nome" onfocus="" class="form-control" id="nome" placeholder="Digite seu nome">
             </div>
             <hr>
-
-
 
             <div class="form-group ">
                 <label for="email"><strong>Senha</strong></label>

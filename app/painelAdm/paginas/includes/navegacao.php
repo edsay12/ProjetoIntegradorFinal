@@ -58,7 +58,7 @@
           <img src="app/painelAdm/dist/img/avatar5.png" class="img-circle elevation-1" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">ClinicaLegal</a>
+          <a href="#" class="d-block"><?php echo $_SESSION["usuario"]    ?></a>
 
         </div>
       </div>

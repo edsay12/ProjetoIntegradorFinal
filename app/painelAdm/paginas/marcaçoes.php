@@ -13,7 +13,7 @@ $dados = $resultdados->consultarBanco('SELECT * FROM eventos');
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Pacientes</h1>
+                    <h1 class="m-0">Marcaçoes</h1>
                     <h1 class="m-0"></h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
@@ -42,7 +42,7 @@ $dados = $resultdados->consultarBanco('SELECT * FROM eventos');
 
 
                             <table id="example1" class="table table-bordered table-striped">
-                                <a href="cpanel.php?pg=marcarconsulta" class="btn btn-success">Cadastrar Pacientes</a>
+                                <a href="cpanel.php?pg=pacientes" class="btn btn-success">Visualizar Pacientes</a>
 
                                 <thead>
                                     <tr class="text-center">

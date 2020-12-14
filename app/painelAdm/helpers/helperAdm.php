@@ -22,7 +22,7 @@ function consultaSQL($tabela, $idtabela = null, $id_valor = null)
 function verificaSeLogado()
 {
 
-    $usuario = trim($_POST['usuario']);
+    $usuario = trim($_POST['nome']);
     $senha = trim($_POST['senha']);
 
 
@@ -32,28 +32,29 @@ function verificaSeLogado()
         ':usuario' => $usuario
     );
 
-    $resultadoConsulta = $resultConexao->consultarBanco('SELECT * FROM usuarios WHERE nome = :usuario', $parametros);
+    $resultadoConsulta = $resultConexao->consultarBanco('SELECT * FROM recepcionistas WHERE nome = :usuario', $parametros);
 
     if (count($resultadoConsulta) > 0) {
         $senha_bd = $resultadoConsulta[0]['senha'];
 
         if (password_verify($senha, $senha_bd)) {
             $_SESSION['usuario'] = $usuario;
-            $_SESSION['img_usuario'] = $resultadoConsulta[0]['img'];
+
             return true;
         } else {
             $erro = 'Usuário e/ou senha inválidos';
 
             //incluir a pagina de login aqui:
-            include_once "app/painelAdm/paginas/login.php";
+            include_once "app/site/paginas/login.php";
         }
     } else {
         $erro = 'Usuário e/ou senha inválidos';
 
         //incluir a pagina de login aqui:
-        include_once "app/painelAdm/paginas/login.php";
+        include_once "app/site/paginas/login.php";
     }
 }
+
 
 function inserirprofi()
 {
@@ -99,7 +100,7 @@ function inserirpaciente()
         $nome = trim($_POST['nome']);
         $rg = trim($_POST['rg']);
         $cpf = trim($_POST['cpf']);
-      
+
         $data1 = trim($_POST['data1']);
 
         //Validar as variáveis e encriptar a senha
@@ -140,7 +141,7 @@ function inserirespecialidade()
 
         );
 
-   
+
         $resultDados = new Conexao();
         $resultDados->intervencaoNoBanco('INSERT INTO especialidades(especialidade) 
     VALUES (:especialidade)', $parametros);
@@ -166,7 +167,7 @@ function inserirrecepcionista()
         $parametros = array(
 
             ':nome' => $nome,
-            ':senha' => $senha
+            ':senha' => password_hash($senha, PASSWORD_DEFAULT)
 
         );
 
@@ -175,11 +176,11 @@ function inserirrecepcionista()
     VALUES (:nome,:senha)', $parametros);
 
         //incluir a pagina que será exibida após cadastrar um usuario aqui:
-
-        include_once "app/site/paginas/login.php";
+        header("Location: cpanel.php?pg=login");
+        //include_once "app/site/paginas/login.php";
     } else {
-        include_once "app/site/painelAdm/paginas/login.php";
-        // header("Location: ?pg=profissionais");
+        include_once "app/site/paginas/login.php";
+        // 
     }
 }
 
@@ -251,7 +252,7 @@ function atualizarpacientes()
     $nome = trim($_POST['nome']);
     $rg = trim($_POST['rg']);
     $cpf = trim($_POST['cpf']);
-    
+
 
 
     //validando as variaveis
@@ -260,7 +261,7 @@ function atualizarpacientes()
         ':nome' => $nome,
         ':rg' => $rg,
         ':cpf' => $cpf,
-       
+
 
     );
 
