@@ -47,6 +47,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -31288,4 +31289,5 @@ a.text-muted:hover {
 [class*="accent-"] a.btn-dark {
   color: #fff;
 }
+
 /*# sourceMappingURL=adminlte.css.map */

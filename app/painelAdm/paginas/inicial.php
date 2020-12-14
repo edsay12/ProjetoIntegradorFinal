@@ -80,7 +80,7 @@ mx-5">
 </svg>
 
   </div>
-  <p>Marcar Consulta</p>
+  <p>Cadastrar Pacientes</p>
 </a>
 
 
