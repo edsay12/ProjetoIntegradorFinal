@@ -20,13 +20,14 @@ if ($paginas) {
             include_once "app\site\paginas\includes\cadastrarecepsionista.php";
             break;
 
-        case 'cadastrarrecepsionista2':
-           
-            inserirrecepcionista();
 
+        case 'cadastrarrecepsionista2':
+            inserirrecepcionista();
             break;
 
-
+        case 'login':
+            include_once "app/site/paginas/login.php";
+            break;
 
         case 'contato':
             include_once "app/site/paginas/includes/header.php";
@@ -64,7 +65,7 @@ if ($paginas) {
             break;
 
         default:
-        include_once "app/site/paginas/includes/header.php";
+            include_once "app/site/paginas/includes/header.php";
             include_once "app/site/paginas/includes/navegacao.php";
             include_once "app/site/paginas/inicial.php";
             include_once "app/site/paginas/includes/footer.php";
@@ -76,5 +77,3 @@ if ($paginas) {
     include_once "app/site/paginas/inicial.php";
     include_once "app/site/paginas/includes/footer.php";
 }
-
-
