@@ -21,7 +21,7 @@ $dados = $resultdados->consultarBanco('SELECT * FROM especialidades');
 
             <div class="row">
                 <div class="col-1 mt-4"> </div>
-                <div class="col-3 mt-4"> <img src="app/painelAdm/dist/img/med.png" alt=""> </div>
+                <div class="col-3 mt-4  text-left"> <img src="app/painelAdm/dist/img/med.png" alt=""> </div>
                 <div class="col-6  mb-3">
                     <form action="?pg=cadastrodemedicos" method="POST">
                         <div class="form-group">

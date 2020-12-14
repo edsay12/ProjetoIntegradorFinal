@@ -56,15 +56,15 @@ $dadopaciente = consultaSQL('pacientes', 'id_paciente', $_GET["id"]);
                             </select>
 
                         </div>
-
-                        <button class="btn btn-secondary" type="submit"> Cadastrar novo evento </button>
-
+                        <div class="text-right" >
+                            <button class="btn btn-secondary" type="submit"> Marcar Consulta </button>
+                        </div>
                     </form>
                 </div>
 
             </div>
 
-    <?php }   ?>
+        <?php }   ?>
         </div>
 
 
