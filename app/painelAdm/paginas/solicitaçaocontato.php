@@ -13,7 +13,7 @@ $dados = $resultdados->consultarBanco('SELECT * FROM contato');
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">solicitaçoes de contato</h1>
+                    <h1 class="m-0">Solicitações de Marcação</h1>
                     <h1 class="m-0"></h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
@@ -33,26 +33,21 @@ $dados = $resultdados->consultarBanco('SELECT * FROM contato');
 
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title far icon-calendar_today">
-                                04 de Dezembro até 17 de Dezembro.
-                                <br>
 
-                            </h3>
-                        </div>
 
-                        <!-- /.card-header -->
-                       
+
+                            <!-- /.card-header -->
+
 
                             <table id="example1" class="table table-bordered table-striped">
 
                                 <thead>
                                     <tr class="text-center">
-                                        <th>id</th>
                                         <th>Nome</th>
-                                        <th>Email</th>
+                                        <th>E-mail</th>
                                         <th>Mensagem</th>
-                                
-                                        <th>Ações</th>
+
+                                        <th>Opções</th>
 
                                     </tr>
                                 </thead>
@@ -61,13 +56,12 @@ $dados = $resultdados->consultarBanco('SELECT * FROM contato');
 
                                     <?php foreach ($dados as $dadosusuarios) {  ?>
                                         <tr class="text-center">
-                                            <td><?php echo $dadosusuarios["id_contato"]  ?></td>
                                             <td><?php echo $dadosusuarios["nome"]  ?></td>
                                             <td><?php echo $dadosusuarios["email"]  ?></td>
                                             <td><?php echo $dadosusuarios["mensagem"]  ?></td>
-                                     
 
-                                            
+
+
                                             <td>
                                                 <a class="btn btn-outline-info icon-pen" href="?pg=contatovisu&id=<?php echo $dadosusuarios['id_contato'] ?>"></a>
                                                 <a class="btn btn-outline-danger icon-delete_sweep" href="?pg=apagarcontato&id=<?php echo $dadosusuarios['id_contato'] ?>"></a>
@@ -94,11 +88,11 @@ $dados = $resultdados->consultarBanco('SELECT * FROM contato');
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                           <img src="app\painelAdm\dist\img\prontuc3a1rio-1-001.jpg"  class="img-fluid" alt="">
+                                            <img src="app\painelAdm\dist\img\prontuc3a1rio-1-001.jpg" class="img-fluid" alt="">
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -108,22 +102,13 @@ $dados = $resultdados->consultarBanco('SELECT * FROM contato');
 
 
                         </div>
-                        <!-- /.card-body -->
                     </div>
-                    <!-- /.card -->
+                    <!-- /.card-body -->
                 </div>
-                <!-- /.col -->
+                <!-- /.card -->
             </div>
-            <!-- /.row -->
+            <!-- /.col -->
         </div>
-        <!-- /.container-fluid -->
+        <!-- /.row -->
     </section>
-    <!-- /.content -->
 </div>
-
-
-</section>
-<!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
-</section>

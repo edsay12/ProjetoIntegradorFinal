@@ -15,7 +15,7 @@ $dados1 = $resultdados->consultarBanco('SELECT * FROM profissionais');
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Editar pacientes</h1>
+                    <h1 class="m-0">Editar paciente</h1>
                     <h1 class="m-0"></h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
@@ -37,15 +37,15 @@ $dados1 = $resultdados->consultarBanco('SELECT * FROM profissionais');
                     <?php foreach ($dadopaciente as $dados) { ?>
                         <form action="?pg=editarpacientes" method="POST">
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Nome</label>
+                                <label for="exampleFormControlInput1">Nome:</label>
                                 <input type="text" name="nome" id="nome" value="<?php echo $dados['nome'] ?>" autofocus class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">rg</label>
+                                <label for="exampleFormControlInput1">RG:</label>
                                 <input type="text" name="rg" value="<?php echo $dados['rg'] ?>" class="form-control rg">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">cpf</label>
+                                <label for="exampleFormControlInput1">CPF:</label>
                                 <input type="text" name="cpf" value="<?php echo $dados['cpf'] ?>" class="form-control cpf">
                             </div>
                             
@@ -53,8 +53,8 @@ $dados1 = $resultdados->consultarBanco('SELECT * FROM profissionais');
 
                             <input type="hidden" name="id_paciente" value="<?php echo $dados['id_paciente'] ?>">
                             <div class="text-right">
-                                <a href="cpanel.php?pg=editarpacientes" class='btn btn-primary'>voltar</a>
-                                <button class="btn btn-danger">atualizar</button>
+                                <a href="cpanel.php?pg=pacientes" class='btn btn-primary'>Voltar</a>
+                                <button class="btn btn-danger">Confirmar</button>
                             </div>
 
                         </form>

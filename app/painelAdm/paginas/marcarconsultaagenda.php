@@ -37,7 +37,7 @@ $dadopaciente = consultaSQL('pacientes', 'id_paciente', $_GET["id"]);
                 <div>
                     <form id="novo_evento" action="cpanel.php?pg=eventos" method="post">
                         <!-- Nao por como disable pois pode nao funcionar -->
-                        Paciente/Medico: <input class="form-control" type="text" name="nome" value="   <?php echo $dados['nome'] ?>" required /><br /><br />
+                        Paciente: <input class="form-control" type="text" name="nome" value="   <?php echo $dados['nome'] ?>" required /><br /><br />
 
                         Data da consulta: <input class="form-control" type="date" name="data" required /><br /><br />
 
@@ -45,7 +45,7 @@ $dadopaciente = consultaSQL('pacientes', 'id_paciente', $_GET["id"]);
 
 
                         <div class="form-group ">
-                            <label name="medico" for="inputState">Médicos</label>
+                            <label name="medico" for="inputState">Especialidade/Médico:</label>
 
 
                             <select id="inputState" name="medico" class="form-control">
@@ -56,6 +56,7 @@ $dadopaciente = consultaSQL('pacientes', 'id_paciente', $_GET["id"]);
                             </select>
 
                         </div>
+
                         <div class="text-right" >
                             <button class="btn btn-secondary" type="submit"> Marcar Consulta </button>
                         </div>
