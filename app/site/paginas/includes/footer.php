@@ -38,6 +38,7 @@
                     <li><a class="instagram" href="#"><i class="icon-instagram"></i></a></li>
                     <li><a class="whatsapp" href="#"><i class="icon-whatsapp"></i></a></li>
                     <li><a class="whatsapp" href="#"><i class="icon-contact_page"></i></a></li>
+                    <!-- Adicionar portfólio da sala acima -->
                 </ul>
             </div>
         </div>
