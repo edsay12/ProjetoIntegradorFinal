@@ -246,9 +246,38 @@ html, body {
   overflow-x: hidden;
 }
 
-#back{
-  background-image: url(../img/navegacao/sobre.png);
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.senac{
+  color:#007BFF;
 }
+
+#aaa{
+  font-size: 13px;
+}
+
+#linha{
+  background-color: whitesmoke;
+}
+
+#tamanho{
+
+ position: absolute;
+  top: -450px;
+  left: 220px;
+}
+
+#sla{
+
+  position: absolute;
+   top: -200px;
+   left: 90px;
+   font-size: 35px;
+   color: rgb(0, 0, 0);
+ }
+
+ .contato{
+   border: peru solid 1px; 
+ }
+
+
+
