@@ -67,7 +67,7 @@
           
           <a href="index.php?pg=inicial" class="btn btn-block btn-warning my-4">Voltar</a>
           <hr style="border-color: black;" >
-          <div style="text-align: center;" ><a   href="" type="submit" class=" "><strong>Cadastro de Recepcionista</strong></a> </div>
+          <div style="text-align: center;" ><a   href="index.php?pg=cadastrarrecepsionista" type="submit" class=" "><strong>Cadastro de Recepcionista</strong></a> </div>
         </form>
       </div>
     </div>

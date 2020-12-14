@@ -8,14 +8,12 @@
     <div class="display-3 font-weight-bolder text-center"> Contato</div>
     <br>
     <div class="col-4 offset-4 mb-5">
-        <form action="?pg=cad_mensagem" method="POST">
+        <form action="index.php?pg=cadastrodemensagem" method="POST">
             <div class="form-group ">
                 <label for="nome"><strong>Nome:</strong></label>
                 <input type="text" required name="nome" class="form-control" id="nome" placeholder="Digite seu nome">
             </div>
             <hr>
-
-
 
             <div class="form-group ">
                 <label for="email"><strong>Email:</strong></label>
@@ -24,7 +22,7 @@
             <hr>
             <div class="form-group">
                 <label for="msg"><strong>Mensagem:</strong></label>
-                <textarea required class="form-control" name="msg" id="text" placeholder="Seja bem específico e nos dê a maior quantidade de detalhes possível." cols="30" rows="5"></textarea>
+                <textarea required class="form-control" name="mensagem" id="text" placeholder="Seja bem específico e nos dê a maior quantidade de detalhes possível." cols="30" rows="5"></textarea>
             </div>
             
             <div class="form-group text-right">

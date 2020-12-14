@@ -1,7 +1,7 @@
 <?php
 $resultdados = new Conexao();
 
-$dadopaciente = consultaSQL('pacientes', 'id_paciente', $_GET["id"]);
+$dadopaciente = consultaSQL('contato', 'id_contato', $_GET["id"]);
 
 $dados1 = $resultdados->consultarBanco('SELECT * FROM profissionais');
 
@@ -35,26 +35,26 @@ $dados1 = $resultdados->consultarBanco('SELECT * FROM profissionais');
                 <div class="col-6 alight-itens-center">
 
                     <?php foreach ($dadopaciente as $dados) { ?>
-                        <form action="?pg=editarpacientes" method="POST">
+                        <form  >
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Nome</label>
-                                <input type="text" name="nome" id="nome" value="<?php echo $dados['nome'] ?>" autofocus class="form-control">
+                                <input type="text" disabled name="nome" id="nome" value="<?php echo $dados['nome'] ?>" autofocus class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">rg</label>
-                                <input type="text" name="rg" value="<?php echo $dados['rg'] ?>" class="form-control rg">
+                                <label for="exampleFormControlInput1">email</label>
+                                <input type="text" disabled name="email" value="<?php echo $dados['email'] ?>" class="form-control ">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">cpf</label>
-                                <input type="text" name="cpf" value="<?php echo $dados['cpf'] ?>" class="form-control cpf">
+                                <label for="exampleFormControlInput1">mensagem</label>
+                                <textarea type="text" disabled name="mensagem" value="" class="form-control "> <?php echo $dados['mensagem'] ?></textarea>
                             </div>
-                            
+                        
+                            </select>
 
 
-                            <input type="hidden" name="id_paciente" value="<?php echo $dados['id_paciente'] ?>">
                             <div class="text-right">
-                                <a href="cpanel.php?pg=editarpacientes" class='btn btn-primary'>voltar</a>
-                                <button class="btn btn-danger">atualizar</button>
+                                <a href="cpanel.php?pg=solicitaçaocontato" class='btn btn-primary'>voltar</a>
+
                             </div>
 
                         </form>

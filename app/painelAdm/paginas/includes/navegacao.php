@@ -109,7 +109,19 @@
           <li class="nav-item  <?php echo (($_GET['pg'] == 'planodesaude') ? 'bg-primary' : ''); ?>  ">
             <a href="?pg=planodesaude" class="nav-link">
               <i class="far icon-user nav-icon"></i>
-              <p>Planos de Saude</p>
+              <p>Planos de Saúde</p>
+            </a>
+          </li>
+          <li class="nav-item  <?php echo (($_GET['pg'] == 'solicitaçaocontato') ? 'bg-primary' : ''); ?>  ">
+            <a href="?pg=solicitaçaocontato" class="nav-link">
+              <i class="far icon-user nav-icon"></i>
+              <p>Solicitaçoes de Marcaçao</p>
+            </a>
+          </li>
+          <li class="nav-item  <?php echo (($_GET['pg'] == 'marcaçoes') ? 'bg-primary' : ''); ?>  ">
+            <a href="?pg=marcaçoes" class="nav-link">
+              <i class="far icon-user nav-icon"></i>
+              <p>marcaçoes</p>
             </a>
           </li>
 

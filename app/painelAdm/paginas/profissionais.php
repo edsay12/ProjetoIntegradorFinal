@@ -34,18 +34,12 @@ $dados = $resultdados->consultarBanco('SELECT * FROM profissionais');
 
 
                     <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title far icon-calendar_today">
-                                04 de Dezembro
-                            </h3>
                         
-                          
-                        </div>
 
 
                         <!-- /.card-header -->
                         <div class="card-body">
-  <a href="cpanel.php?pg=cadastrodemedicos" class="btn btn-success">Cadastrar</a>
+  <a href="cpanel.php?pg=cadastrodemedicos" class="btn btn-success">Cadastrar Profissionais</a>
 
 
 
