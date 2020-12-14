@@ -1,43 +1,36 @@
 <?php
 include_once "app/painelAdm/helpers/helperAdm.php";
 
+$pg = "cpanel";
 
 
+session_start();
+if (isset($_GET["pg"])) {
+    $pg = $_GET["pg"];
+}
+
+if (isset($_SESSION['usuario'])) {
+    switch ($pg) {
 
 
-
-
-
-$cpanel = isset($_GET["pg"]);
-
-
-
-
-if ($cpanel) {
-
-    switch ($_GET["pg"]) {
-
-
-
-
-        case 'login':
-            include_once "app/site/paginas/login.php";
+        case 'cpanel':
+            include_once "app/painelAdm/paginas/includes/header.php";
+            include_once "app/painelAdm/paginas/includes/navegacao.php";
+            include_once "app/painelAdm/paginas/inicial.php";
+            include_once "app/painelAdm/paginas/includes/footer.php";
             break;
 
-
-
-
-
-
-
-
-
+        case 'login':
+            include_once "app/painelAdm/paginas/includes/header.php";
+            include_once "app/painelAdm/paginas/includes/navegacao.php";
+            include_once "app/painelAdm/paginas/inicial.php";
+            include_once "app/painelAdm/paginas/includes/footer.php";
+            break;
 
         case 'agenda':
             include_once "app/painelAdm/paginas/includes/header.php";
             include_once "app/painelAdm/paginas/includes/navegacao.php";
             include_once "app/painelAdm/paginas/agenda.php";
-
             // include_once "app/painelAdm/paginas/includes/footer.php";
             break;
 
@@ -183,8 +176,8 @@ if ($cpanel) {
 
         case 'sair';
             session_destroy();
-            header('location' . $_SERVER['PHP_SELF']);
-            header('Refresh:0');
+            header('Location: ' . $_SERVER['PHP_SELF']);
+            //header('Refresh: 0');
             break;
 
 
@@ -192,7 +185,6 @@ if ($cpanel) {
             include_once "app/painelAdm/paginas/includes/header.php";
             include_once "app/painelAdm/paginas/includes/navegacao.php";
             include_once "app/painelAdm/paginas/planodesaude.php";
-
             include_once "app/painelAdm/paginas/includes/footer.php";
 
 
@@ -201,10 +193,7 @@ if ($cpanel) {
             include_once "app/painelAdm/paginas/includes/header.php";
             include_once "app/painelAdm/paginas/includes/navegacao.php";
             include_once "app/painelAdm/paginas/marcarconsultaagenda.php";
-
             include_once "app/painelAdm/paginas/includes/footer.php";
-
-
             break;
 
 
@@ -221,30 +210,34 @@ if ($cpanel) {
             include_once "app/painelAdm/paginas/includes/navegacao.php";
             include_once "app/painelAdm/paginas/visualizarcontato.php";
             include_once "app/painelAdm/paginas/includes/footer.php";
-
-
             break;
 
         case 'marcaçoes':
             include_once "app/painelAdm/paginas/includes/header.php";
             include_once "app/painelAdm/paginas/includes/navegacao.php";
-            include_once "app\painelAdm\paginas\marcaçoes.php";
+            include_once "app/painelAdm/paginas/marcaçoes.php";
             include_once "app/painelAdm/paginas/includes/footer.php";
-
-
             break;
 
-
-
-
         default:
-
+            include_once "app/painelAdm/paginas/includes/header.php";
+            include_once "app/painelAdm/paginas/includes/navegacao.php";
+            include_once "app/painelAdm/paginas/inicial.php";
+            include_once "app/painelAdm/paginas/includes/footer.php";
             break;
     }
 } else {
-    include_once "app/painelAdm/paginas/includes/header.php";
-    include_once "app/painelAdm/paginas/includes/navegacao.php";
-    include_once "app/painelAdm/paginas/inicial.php";
+    $erro;
+    //verifica se foi submetido metodo post
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    include_once "app/painelAdm/paginas/includes/footer.php";
+        if (verificaSeLogado()) {
+            include_once "app/painelAdm/paginas/includes/header.php";
+            include_once "app/painelAdm/paginas/includes/navegacao.php";
+            include_once "app/painelAdm/paginas/inicial.php";
+            include_once "app/painelAdm/paginas/includes/footer.php";
+        }
+    } else {
+        include_once "app/site/paginas/login.php";
+    }
 }

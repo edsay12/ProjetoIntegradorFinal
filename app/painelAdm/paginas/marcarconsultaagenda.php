@@ -57,14 +57,15 @@ $dadopaciente = consultaSQL('pacientes', 'id_paciente', $_GET["id"]);
 
                         </div>
 
-                        <button class="btn btn-secondary" type="submit"> Marcar Consulta </button>
-
+                        <div class="text-right" >
+                            <button class="btn btn-secondary" type="submit"> Marcar Consulta </button>
+                        </div>
                     </form>
                 </div>
 
             </div>
 
-    <?php }   ?>
+        <?php }   ?>
         </div>
 
 
