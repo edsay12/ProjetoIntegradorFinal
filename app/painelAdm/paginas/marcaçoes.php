@@ -13,7 +13,7 @@ $dados = $resultdados->consultarBanco('SELECT * FROM eventos');
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Pacientes</h1>
+                    <h1 class="m-0">Consultas Marcadas</h1>
                     <h1 class="m-0"></h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
@@ -42,19 +42,19 @@ $dados = $resultdados->consultarBanco('SELECT * FROM eventos');
 
 
                             <table id="example1" class="table table-bordered table-striped">
-                                <a href="cpanel.php?pg=marcarconsulta" class="btn btn-success">Cadastrar Pacientes</a>
+                                <a href="cpanel.php?pg=pacientes" class="btn btn-success">Pacientes</a>
 
                                 <thead>
                                     <tr class="text-center">
 
-                                        <th>Data</th>
                                         <th>Paciente</th>
-                                        <th>medico</th>
+                                        <th>Médico</th>
+                                        <th>Data</th>
                                        
 
 
 
-                                        <th>Ações</th>
+                                        <th>Opções</th>
 
                                     </tr>
                                 </thead>
@@ -64,9 +64,9 @@ $dados = $resultdados->consultarBanco('SELECT * FROM eventos');
                                     <?php foreach ($dados as $dadosusuarios) {  ?>
                                         <tr class="text-center">
 
-                                            <td><?php echo $dadosusuarios["start"]  ?></td>
                                             <td><?php echo $dadosusuarios["title"]  ?></td>
                                             <td><?php echo $dadosusuarios["medico"]  ?></td>
+                                            <td><?php echo $dadosusuarios["start"]  ?></td>
                                           
 
                                             

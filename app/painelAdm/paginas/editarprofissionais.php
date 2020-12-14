@@ -39,18 +39,18 @@ $dadopaciente = consultaSQL('profissionais', 'id_profi', $_GET["id"]);
                     <?php foreach ($dadopaciente as $dados) { ?>
                         <form action="?pg=editarprofissionais" method="POST">
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Nome</label>
+                                <label for="exampleFormControlInput1">Nome:</label>
                                 <input type="text" name="nomemedico" id="nomemedico" value="<?php echo $dados['nomemedico'] ?>" autofocus class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">rg</label>
+                                <label for="exampleFormControlInput1">RG:</label>
                                 <input type="text" name="rg" value="<?php echo $dados['rg'] ?>" class="form-control rg">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">cpf</label>
+                                <label for="exampleFormControlInput1">CPF:</label>
                                 <input type="text" name="cpf" value="<?php echo $dados['cpf'] ?>" class="form-control cpf">
                             </div>
-                            <label for="exampleFormControlInput1">especialidade</label>
+                            <label for="exampleFormControlInput1">Especialidade:</label>
 
                             <select id="inputState" name="especialidade" class="form-control">
 
@@ -60,11 +60,11 @@ $dadopaciente = consultaSQL('profissionais', 'id_profi', $_GET["id"]);
                                 <?php  } ?>
                             </select>
 
-
+                            <br>
                             <input type="hidden" name="id_profi" value="<?php echo $dados['id_profi'] ?>">
                             <div class="text-right">
-                                <a href="cpanel.php?pg=editarpacientes" class='btn btn-primary'>voltar</a>
-                                <button class="btn btn-danger">atualizar</button>
+                                <a href="cpanel.php?pg=profissionais" class='btn btn-primary'>Voltar</a>
+                                <button class="btn btn-danger">Confirmar</button>
                             </div>
 
                         </form>

@@ -65,7 +65,7 @@
       <!-- barra de pesquisa -->
       <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Buscar" aria-label="Buscar">
           <div class="input-group-append">
             <button class="btn btn-sidebar">
               <i class="fas fa-search fa-fw"></i>
@@ -81,11 +81,22 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item    <?php echo (($_GET['pg'] == 'agenda') ? 'bg-primary' : ''); ?>">
             <a href="?pg=agenda" class="nav-link">
-              <i class="far icon-contacts nav-icon"></i>
+              <i class="far icon-book_online nav-icon"></i>
               <p>Agenda</p>
             </a>
           </li>
-          
+          <li class="nav-item  <?php echo (($_GET['pg'] == 'marcaçoes') ? 'bg-primary' : ''); ?>  ">
+            <a href="?pg=marcaçoes" class="nav-link">
+              <i class="far icon-article nav-icon"></i>
+              <p>Marcações</p>
+            </a>
+          </li>
+           <li class="nav-item  <?php echo (($_GET['pg'] == 'solicitaçaocontato') ? 'bg-primary' : ''); ?>  ">
+            <a href="?pg=solicitaçaocontato" class="nav-link">
+              <i class="far icon-pending_actions nav-icon"></i>
+              <p>Solicitações de Marcação</p>
+            </a>
+          </li>
           <li class="nav-item   <?php echo (($_GET['pg'] == 'pacientes') ? 'bg-primary' : ''); ?> ">
             <a href="?pg=pacientes" class="nav-link">
               <i class="far icon-person_add_alt_1 nav-icon"></i>
@@ -102,28 +113,18 @@
           
           <li class="nav-item  <?php echo (($_GET['pg'] == 'cadastrodeespecialidades') ? 'bg-primary' : ''); ?>  ">
             <a href="?pg=cadastrodeespecialidades" class="nav-link">
-              <i class="far icon-user nav-icon"></i>
+              <i class="far icon-psychology nav-icon"></i>
               <p>Cadastro de especialidades</p>
             </a>
           </li>
+         
           <li class="nav-item  <?php echo (($_GET['pg'] == 'planodesaude') ? 'bg-primary' : ''); ?>  ">
             <a href="?pg=planodesaude" class="nav-link">
-              <i class="far icon-user nav-icon"></i>
+              <i class="far icon-ballot nav-icon"></i>
               <p>Planos de Saúde</p>
             </a>
           </li>
-          <li class="nav-item  <?php echo (($_GET['pg'] == 'solicitaçaocontato') ? 'bg-primary' : ''); ?>  ">
-            <a href="?pg=solicitaçaocontato" class="nav-link">
-              <i class="far icon-user nav-icon"></i>
-              <p>Solicitaçoes de Marcaçao</p>
-            </a>
-          </li>
-          <li class="nav-item  <?php echo (($_GET['pg'] == 'marcaçoes') ? 'bg-primary' : ''); ?>  ">
-            <a href="?pg=marcaçoes" class="nav-link">
-              <i class="far icon-user nav-icon"></i>
-              <p>marcaçoes</p>
-            </a>
-          </li>
+          
 
 
 

@@ -13,7 +13,7 @@ $dados = $resultdados->consultarBanco('SELECT * FROM profissionais');
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Cadastro de Pacientes</h1>
+                    <h1 class="m-0">Cadastro de Paciente</h1>
                     
                 </div>
             </div>
@@ -26,24 +26,24 @@ $dados = $resultdados->consultarBanco('SELECT * FROM profissionais');
                     <!-- formulario -->
                     <form action="?pg=marcarconsulta" method="POST">
                         <div class="form-group">
-                            <label for="inputAddress">Nome Completo do Paciente </label>
-                            <input class="form-control" type="text" name="nome" placeholder="joaquin lopes ....">
+                            <label for="inputAddress">Nome completo do paciente: </label>
+                            <input class="form-control" type="text" name="nome" placeholder="Exemplo:Joaquin Lopes ....">
                         </div>
                         <div class="row">
                             <div class="form-group  col-md-6">
-                                <label for="inputEmail4">RG</label>
-                                <input class="form-control rg" type="text"  name="rg"  placeholder="9.858.659" id="inputEmail4">
+                                <label for="inputEmail4">RG:</label>
+                                <input class="form-control rg" type="text"  name="rg"  placeholder="Exemplo:9.858.659" id="inputEmail4">
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="inputPassword4">CPF</label>
-                                <input type="text"  name="cpf" class="form-control cpf" placeholder="133.151.154-56" id="inputPassword4">
+                                <label for="inputPassword4">CPF:</label>
+                                <input type="text"  name="cpf" class="form-control cpf" placeholder="Exemplo:133.151.154-56" id="inputPassword4">
                             </div>
 
                         </div>
                       
                             
                             <div class="form-group  " name="data1" >
-                                <label for="inputState">Data</label>
+                                <label for="inputState">Data:</label>
                                 <input type="date"  name="data1" class="form-control " >
                                 
                                 </div>
