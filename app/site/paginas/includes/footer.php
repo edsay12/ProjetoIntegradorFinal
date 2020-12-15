@@ -8,9 +8,8 @@
             <div class="col-xs-6 col-md-3">
                 <h6>Central de Atendimento</h6>
                 <ul class="footer-links">
-                    <li><a href="">0800 037 4526</a></li>
-                    <li><a href="">0800 988 5246 </a></li>
-                    <li><a href="">0800 426 7852</a></li>
+                    <li><a href="">Tel para contato: 0800 037 4526</a></li>
+                    <li><a href="">Tel para contato: 0800 426 7852</a></li>
 
                 </ul>
             </div>
@@ -27,8 +26,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-sm-6 col-xs-12">
-                <p class="copyright-text"><b>Copyright</b> &copy; <b>2020 Todos os direitos reservados por</b>
-                    <a href="#">divlopers</a>.
+                <p style="color: black;" class="copyright-text"><b>Copyright</b> &copy; <b>2020 Todos os direitos reservados por</b>
+                    <a style="color: #000099;" href="#">< Div>Lopers</a>.
                 </p>
             </div>
 
@@ -37,7 +36,7 @@
                     <li><a class="facebook" href="#"><i class="icon-facebook"></i></a></li>
                     <li><a class="instagram" href="#"><i class="icon-instagram"></i></a></li>
                     <li><a class="whatsapp" href="#"><i class="icon-whatsapp"></i></a></li>
-                    <li><a class="whatsapp" href="#"><i class="icon-contact_page"></i></a></li>
+                    <li><a class="whatsapp" target="blank1" href="index.php?pg=divlopers"><i class="icon-contact_page"></i></a></li>
                     <!-- Adicionar portfólio da sala acima -->
                 </ul>
             </div>
