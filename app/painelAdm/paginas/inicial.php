@@ -46,7 +46,7 @@
 
 
 
-<a href="cpanel.php?pg=marcarconsulta" class="card1 credentialing
+<a href="cpanel.php?pg=pacientes" class="card1 credentialing
 mx-5">
      <div class="overlay1"></div>
   <div class="circle">
@@ -84,7 +84,7 @@ mx-5">
 </a>
 
 
-    <a href="cpanel.php?pg=cadastrodemedicos" class="card1 human-resources mx-5">
+    <a href="cpanel.php?pg=profissionais" class="card1 human-resources mx-5">
         <div class="overlay1"></div>
         <div class="circle">
 

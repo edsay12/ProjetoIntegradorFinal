@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Escola Senac</title>
+    <link  rel="shortcut icon"  href="app/assets/img/senacsenac.png">
+
 
 
     <!-- Bootstrap -->
