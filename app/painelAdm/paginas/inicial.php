@@ -201,7 +201,7 @@ mx-5">
             </svg>
 
         </div>
-  <h3>Medicos</h3>
+  <h3>Médicos</h3>
 </a>
 
 </div>
