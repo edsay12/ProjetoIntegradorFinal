@@ -21,7 +21,7 @@ $dados = $resultdados->consultarBanco('SELECT * FROM profissionais');
 
             <div class="row">
                 <div class="col-1 mt-4"> </div>
-                <div class="col-3 mt-4"> <img src="app/painelAdm/dist/img/medd.png" alt=""> </div>
+                <div class="col-3 mt-3 "> <img src="app/painelAdm/dist/img/medd.png" alt=""> </div>
                 <div class="col-6  mb-3">
                     <!-- formulario -->
                     <form action="?pg=marcarconsulta" method="POST">
@@ -51,7 +51,7 @@ $dados = $resultdados->consultarBanco('SELECT * FROM profissionais');
 
 
                         <div class="text-center">
-                            <button type="submit" class="btn btn-info btn-lg btn-block"> Marcar<span class="icon-cheveron-right"></span> </button>
+                            <button type="submit" class="btn btn-info btn-lg btn-block"> Cadastrar<span class="icon-cheveron-right"></span> </button>
                         </div>
                     </form>
                     

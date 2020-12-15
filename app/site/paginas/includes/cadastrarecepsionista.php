@@ -16,10 +16,10 @@
                         <label for="senha_cad">Senha</label>
                         <input type="password" required name="senha" class="form-control">
                     </p>
-                    <button type="submit" class="btn btn-primary">Cadastrar
+                    <button type="submit" class="btn btn-block btn-primary">Cadastrar
                         <span class="bre-send"></span>
                     </button>
-                    <a href="cpanel.php?pg=login" class="btn btn-block btn-warning my-4">Voltar</a>
+                    <a href="cpanel.php?pg=login" class="btn btn-block btn-warning my-2">Voltar</a>
                 </form>
             </div>
         </div>

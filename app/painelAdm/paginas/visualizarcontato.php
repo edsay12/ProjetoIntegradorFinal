@@ -5,6 +5,8 @@ $dadopaciente = consultaSQL('contato', 'id_contato', $_GET["id"]);
 
 $dados1 = $resultdados->consultarBanco('SELECT * FROM profissionais');
 
+
+
 ?>
 
 
@@ -15,7 +17,7 @@ $dados1 = $resultdados->consultarBanco('SELECT * FROM profissionais');
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Editar pacientes</h1>
+                    <h1 class="m-0">Visualizar Contato</h1>
                     <h1 class="m-0"></h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
@@ -37,15 +39,15 @@ $dados1 = $resultdados->consultarBanco('SELECT * FROM profissionais');
                     <?php foreach ($dadopaciente as $dados) { ?>
                         <form  >
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Nome</label>
+                                <label for="exampleFormControlInput1">Nome:</label>
                                 <input type="text" disabled name="nome" id="nome" value="<?php echo $dados['nome'] ?>" autofocus class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">email</label>
+                                <label for="exampleFormControlInput1">E-mail:</label>
                                 <input type="text" disabled name="email" value="<?php echo $dados['email'] ?>" class="form-control ">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">mensagem</label>
+                                <label for="exampleFormControlInput1">Mensagem:</label>
                                 <textarea type="text" disabled name="mensagem" value="" class="form-control "> <?php echo $dados['mensagem'] ?></textarea>
                             </div>
                         

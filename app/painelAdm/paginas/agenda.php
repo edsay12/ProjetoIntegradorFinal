@@ -9,7 +9,7 @@
               <h1 class="m-0"></h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
-              <a href="cpanel.php?pg=pacientes" class="btn btn-success">Pacientes</a>
+              
 
             </div><!-- /.col -->
           </div><!-- /.row -->
@@ -39,7 +39,7 @@
             editable: true,
             eventLimit: true,
             events: 'app/painelAdm/calendario/eventos.php',
-            eventColor: '#dd6777'
+            eventColor: '#F4A460'
           });
 
 

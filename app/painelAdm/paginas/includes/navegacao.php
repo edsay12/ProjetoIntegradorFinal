@@ -8,9 +8,15 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-     
+
     </ul>
 
+
+    <div class="row">
+ 
+      <img src="app/assets/img/gambi.png" class="text-center" alt="">
+      <a href="cpanel.php?pg=inicial"><img src="app/assets/img/senac000.jpg" class="mx-4" alt=""></a>
+    </div>
     <!-- formulario de pesquisa topo -->
     <!-- <form class="form-inline ml-3">
       <div class="input-group input-group-sm">
@@ -24,6 +30,8 @@
     </form> -->
 
     <!-- mantem tudo no lugar -->
+    
+
     <ul class="navbar-nav ml-auto">
 
 
@@ -36,10 +44,10 @@
         </a>
       </li>
       <li class="nav-item">
-                  <a class="nav-link"  href="cpanel.php?pg=sair" >
-                      <i class="fas fa-arrow-left"></i>
-                  </a>
-              </li>
+        <a class="nav-link" href="cpanel.php?pg=sair">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+      </li>
 
     </ul>
   </nav>
@@ -55,7 +63,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-2 pb-2 py-2 mb-2 d-flex">
         <div class="image">
-          <img src="app/painelAdm/dist/img/avatar5.png" class="img-circle elevation-1" alt="User Image">
+          <img src="app/painelAdm/dist/img/avatar8.png" class="img-circle elevation-1" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block"><?php echo $_SESSION["usuario"]    ?></a>
@@ -91,16 +99,16 @@
               <p>Marcações</p>
             </a>
           </li>
-           <li class="nav-item  <?php echo (($_GET['pg'] == 'solicitaçaocontato') ? 'bg-primary' : ''); ?>  ">
-            <a href="?pg=solicitaçaocontato" class="nav-link">
-              <i class="far icon-pending_actions nav-icon"></i>
-              <p>Solicitações de Marcação</p>
-            </a>
-          </li>
           <li class="nav-item   <?php echo (($_GET['pg'] == 'pacientes') ? 'bg-primary' : ''); ?> ">
             <a href="?pg=pacientes" class="nav-link">
               <i class="far icon-person_add_alt_1 nav-icon"></i>
               <p>Pacientes</p>
+            </a>
+          </li>
+          <li class="nav-item  <?php echo (($_GET['pg'] == 'solicitaçaocontato') ? 'bg-primary' : ''); ?>  ">
+            <a href="?pg=solicitaçaocontato" class="nav-link">
+              <i class="far icon-pending_actions nav-icon"></i>
+              <p>Solicitações de Marcação</p>
             </a>
           </li>
           <li class="nav-item   <?php echo (($_GET['pg'] == 'profissionais') ? 'bg-primary' : ''); ?>  ">
@@ -110,21 +118,21 @@
             </a>
           </li>
 
-          
+
           <li class="nav-item  <?php echo (($_GET['pg'] == 'cadastrodeespecialidades') ? 'bg-primary' : ''); ?>  ">
             <a href="?pg=cadastrodeespecialidades" class="nav-link">
-              <i class="far icon-psychology nav-icon"></i>
+              <i class="far icon-clipboard nav-icon"></i>
               <p>Cadastro de especialidades</p>
             </a>
           </li>
-         
+
           <li class="nav-item  <?php echo (($_GET['pg'] == 'planodesaude') ? 'bg-primary' : ''); ?>  ">
             <a href="?pg=planodesaude" class="nav-link">
               <i class="far icon-ballot nav-icon"></i>
               <p>Planos de Saúde</p>
             </a>
           </li>
-          
+
 
 
 
