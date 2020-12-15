@@ -7,28 +7,28 @@
 
     <!-- bootstrap -->
 
-    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="app/assets/css/bootstrap.css">
 
 
     <!-- meu css -->
 
-    <link rel="stylesheet" href="../../assets/css/MeuCss.css">
+    <link rel="stylesheet" href="app/assets/css/MeuCss.css">
 
 
     <!-- icoomon -->
 
-    <link rel="shortcut icon" href="../../assets/icon/icon2.jfif">
+    <link rel="shortcut icon" href="app/assets/icon/icon2.jfif">
 
     <title>Divlopers</title>
 </head>
 
 <body>
-    <div class="container/fluid"> <img class="img-fluid" id="banner" src="../../assets/img/bannerLogo-0.png"  alt="">
-    <br><br>
-    <br>
-    <br>
+    <div class="container/fluid"> <img class="img-fluid" id="banner" src="app/assets/img/bannerLogo-0.png" alt="">
+        <br><br>
+        <br>
+        <br>
     </div>
-     
+
 
 
     <div class="container" style="text-align: center">
@@ -37,14 +37,13 @@
 
         <div class="row" style="max-width: 65rem;">
             <div class="col-4">
-                <img src="../../assets/img/imgturma/AdryanL.jpg " width="250px" height="250px" class="rounded-circle"
-                    class=" img-fluid img-thumbnail" alt="">
+                <img src="app/assets/img/imgturma/AdryanL.jpg " width="250px" height="250px" class="rounded-circle" class=" img-fluid img-thumbnail" alt="">
             </div>
 
             <div class="col-8">
 
                 <h4 class="text-center " style="font-size:30px; color: whitesmoke">Adryan Amorim</h4>
-<br><br>
+                <br><br>
                 <p style="font-size: 20px; color: white">
                     "Projeto muito bom, uma ótima oportunidade de reconhecimento."
                 </p>
@@ -62,14 +61,13 @@
 
         <div class="row" style="max-width: 65rem;">
             <div class="col-4">
-                <img src="../../assets/img/imgturma/andrew.jpg" width="250px" height="250px" class=" rounded-circle"
-                    class=" img-fluid img-thumbnail" alt="">
+                <img src="app/assets/img/imgturma/andrew.jpg" width="250px" height="250px" class=" rounded-circle" class=" img-fluid img-thumbnail" alt="">
             </div>
 
             <div class="col-8">
 
                 <h4 class="text-center " style="font-size:30px; color: white">Andrew Amorim</h4>
-<br><br>
+                <br><br>
                 <p style="font-size: 20px; color: white">
                     "Sobre o projeto, achei algo produtivo e interessante para o mercado de
                     trabalho, com algumas adversidades mas nada que um trabalho em equipe não ajude."
@@ -89,14 +87,13 @@
 
         <div class="row" style="max-width: 65rem;">
             <div class="col-4">
-                <img src="../../assets/img/imgturma/breno.png" width="250px" height="250px" class="rounded-circle"
-                    class=" img-fluid img-thumbnail" alt="">
+                <img src="app/assets/img/imgturma/breno.png" width="250px" height="250px" class="rounded-circle" class=" img-fluid img-thumbnail" alt="">
             </div>
 
             <div class="col-8">
 
                 <h4 class="text-center " style="font-size:30px; color: white">Breno Farias</h4>
-<br><br>
+                <br><br>
                 <p style="font-size: 20px; color: white">
                     "A criação do projeto foi interessante pois agregou valor, experiência e
                     trabalho em equipe."
@@ -115,14 +112,13 @@
 
         <div class="row" style="max-width: 65rem;">
             <div class="col-4">
-                <img src="../../assets/img/imgturma/camila.png" width="250px" height="250px" class="rounded-circle"
-                    class=" img-fluid img-thumbnail" alt="">
+                <img src="app/assets/img/imgturma/camila.png" width="250px" height="250px" class="rounded-circle" class=" img-fluid img-thumbnail" alt="">
             </div>
 
             <div class="col-8">
 
                 <h4 class="text-center " style="font-size: 30px; color: white">Camila Lídia</h4>
-<br><br>
+                <br><br>
                 <p style="font-size: 20px; color: white">
                     "Achei complicado, mas como estamos nos ajudando, tá mais
                     fácil e fluindo mais rápido que pensamos."
@@ -140,13 +136,12 @@
         <br><br><br>
         <div class="row" style="max-width: 65rem;">
             <div class="col-4">
-                <img src="../../assets/img/imgturma/carlos.png" width="250px" height="250px" class="rounded-circle"
-                    class=" img-fluid img-thumbnail" alt="">
+                <img src="app/assets/img/imgturma/carlos.png" width="250px" height="250px" class="rounded-circle" class=" img-fluid img-thumbnail" alt="">
             </div>
 
             <div class="col-8">
 
-                <h4 class="text-center " style="font-size:30px; color: white">Carlos Henrique</h4>    <br><br>
+                <h4 class="text-center " style="font-size:30px; color: white">Carlos Henrique</h4> <br><br>
                 <p style="font-size: 20px; color: white">
                     "Um projeto bastante interessante, com vários desafios e obstáculos."
                 </p>
@@ -167,14 +162,13 @@
 
         <div class="row" style="max-width: 65rem;">
             <div class="col-4">
-                <img src="../../assets/img/imgturma/edvan.png" width="250px" height="250px" class="rounded-circle"
-                    class=" img-fluid img-thumbnail" alt="">
+                <img src="app/assets/img/imgturma/edvan.png" width="250px" height="250px" class="rounded-circle" class=" img-fluid img-thumbnail" alt="">
             </div>
 
             <div class="col-8">
 
                 <h4 class="text-center " style="font-size:30px; color: white">Edvan Araujo</h4>
-<br><br>
+                <br><br>
                 <p style="font-size: 20px; color: white">
                     "O projeto foi uma experiência muito legal porém muito desafiadora."
                 </p>
@@ -193,14 +187,13 @@
 
         <div class="row" style="max-width: 65rem;">
             <div class="col-4">
-                <img src="../../assets/img/imgturma/Jonas.png" width="250px" height="250px" class="rounded-circle"
-                    class=" img-fluid img-thumbnail" alt="">
+                <img src="app/assets/img/imgturma/Jonas.png" width="250px" height="250px" class="rounded-circle" class=" img-fluid img-thumbnail" alt="">
             </div>
 
             <div class="col-8">
 
                 <h4 class="text-center " style="font-size:30px; color: white">Jonas Rosa</h4>
-<br><br>
+                <br><br>
                 <p style="font-size: 20px; color: white">
                     "Achei o projeto desafiador, uma oportunidade muito boa de se desenvolver
                     individualmente e como equipe."
@@ -220,19 +213,18 @@
 
         <div class="row" style="max-width: 65rem;">
             <div class="col-4">
-                <img src="../../assets/img/imgturma/Junior.png" width="250px" height="250px" class="rounded-circle"
-                    class=" img-fluid img-thumbnail" alt="">
+                <img src="app/assets/img/imgturma/Junior.png" width="250px" height="250px" class="rounded-circle" class=" img-fluid img-thumbnail" alt="">
             </div>
 
             <div class="col-8">
 
                 <h4 class="text-center " style="font-size:30px; color: white">Josué Ferreira</h4>
-<br><br>
+                <br><br>
                 <p style="font-size: 20px; color: white">
-                 "Achei o projeto bem interativo, bom para unir a classe, bem interessante."
+                    "Achei o projeto bem interativo, bom para unir a classe, bem interessante."
                 </p>
                 <p style="font-size: 20px; color: white">"Muito bom, conheci pessoas legais e eu gostei do curso em si, das aulas, é
-                isso."
+                    isso."
                 </p>
 
                 <div class="text-right">
@@ -246,14 +238,13 @@
 
         <div class="row" style="max-width: 65rem;">
             <div class="col-4">
-                <img src="../../assets/img/imgturma/kemelly.png" width="250px" height="250px" class="rounded-circle"
-                    class=" img-fluid img-thumbnail" alt="">
+                <img src="app/assets/img/imgturma/kemelly.png" width="250px" height="250px" class="rounded-circle" class=" img-fluid img-thumbnail" alt="">
             </div>
 
             <div class="col-8">
 
                 <h4 class="text-center " style="font-size:30px; color: white">Kemelly Nascimento</h4>
-<br><br>
+                <br><br>
                 <p style="font-size: 20px; color: white">
                     "O projeto foi bastante desafiador mas ao mesmo tempo divertido e nos deu a
                     oportunidade de trabalhar em equipe."
@@ -272,14 +263,13 @@
 
         <div class="row" style="max-width: 65rem;">
             <div class="col-4">
-                <img src="../../assets/img/imgturma/LuizG.jpg" width="250px" height="250px" class="rounded-circle"
-                    class=" img-fluid img-thumbnail" alt="">
+                <img src="app/assets/img/imgturma/LuizG.jpg" width="250px" height="250px" class="rounded-circle" class=" img-fluid img-thumbnail" alt="">
             </div>
 
             <div class="col-8">
 
                 <h4 class="text-center " style="font-size:30px; color: white">Luiz Fernando Leite</h4>
-<br><br>
+                <br><br>
                 <p style="font-size: 20px; color: white">
                     "Como gerente do projeto, senti que o desafio era grande pois
                     tenho mais facilidade para codificar do que gerenciar equipes mas no final deu tudo certo."
@@ -302,14 +292,13 @@
 
         <div class="row" style="max-width: 65rem;">
             <div class="col-4">
-                <img src="../../assets/img/imgturma/LuizMen.png" width="250px" height="250px" class="rounded-circle"
-                    class=" img-fluid img-thumbnail" alt="">
+                <img src="app/assets/img/imgturma/LuizMen.png" width="250px" height="250px" class="rounded-circle" class=" img-fluid img-thumbnail" alt="">
             </div>
 
             <div class="col-8">
 
                 <h4 class="text-center  " style="font-size: 30px; color: white">Luiz Menezes</h4>
-<br><br>
+                <br><br>
                 <p style="font-size: 20px; color: white">
                     "Achei o projeto bom, legal e dinâmico."
                 </p>

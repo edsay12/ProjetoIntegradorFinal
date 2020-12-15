@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Final</title>
+    <title>Clínica Escola Senac</title>
 
 
     <!-- Bootstrap -->
@@ -16,8 +16,8 @@
 
     <!-- Meu CSS -->
     <link rel="stylesheet" href="app/assets/css/projetofinalcss.css">
-    
-    
+
+
 
 </head>
 
@@ -28,6 +28,14 @@
 
     <div class="container-fluid table-light alert-link">
         <div class="container">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <br>
+                    <img class="img-fluid" src="app/assets/img/logoCES2.jpeg" alt="">
+                </div>
+                <div class="col-4"></div>
+            </div>
             <nav class="navbar  navbar-expand-lg navbar-info">
                 <img src="app/assets/img/miniatura.png" alt="" class=" p-2">
                 <a class="navbar-brand" href="#"></a>

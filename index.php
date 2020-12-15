@@ -64,6 +64,10 @@ if ($paginas) {
             include_once "app/site/paginas/includes/footer.php";
             break;
 
+        case 'divlopers':
+            include_once "app/site/paginas/DivLopers.php";
+            break;
+
         default:
             include_once "app/site/paginas/includes/header.php";
             include_once "app/site/paginas/includes/navegacao.php";

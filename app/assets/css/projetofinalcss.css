@@ -223,22 +223,22 @@ bottom: -15px;
 
 #botaoesq{
   position: absolute;
-  left: -110px;
+  left: -100px;
 }
 
 .icon-arrow-left{
-  color: orange;
+  color: rgb(255, 255, 255);
   font-size: 30px;
 }
 .icon-arrow-right{
-  color: orange;
+  color: rgb(255, 255, 255);
   font-size: 30px;
 }
 
 #botaodirei{
 
   position: absolute;
-  right: -112px;
+  right: -100px;
 }
 
 html, body {
@@ -279,5 +279,12 @@ html, body {
    border: peru solid 1px; 
  }
 
+ .haha{
+  position: absolute;
+  top: 22px;
+  font-size: 30px;
+}
 
-
+.planos{
+  width: 1353px;
+}
